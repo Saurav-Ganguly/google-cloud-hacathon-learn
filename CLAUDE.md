@@ -113,6 +113,35 @@ Before answering ANY question or doing ANY task, always search for relevant cont
 
 Never answer from training data alone when vault context exists. If a file seems relevant, read it. This rule applies to every message without exception.
 
+### Daily Log Rule (MANDATORY)
+
+After any significant action, append an entry to today's log at `logs/YYYY-MM-DD.md`. Create the file if it doesn't exist.
+
+**What counts as significant** (use judgment — when in doubt, log it):
+- Any tool installed, authenticated, or configured
+- Any quickstart, tutorial, or guide completed
+- Any new resource note created
+- Any concept, idea, or project file created or substantially expanded
+- Any decision made about what to build or how to approach it
+- Any error hit and resolved (root cause + fix)
+- Any deployment or infrastructure action
+
+**What does NOT need a log entry:**
+- Minor edits to existing notes (fixing a link, rewording)
+- Routine index.md updates triggered by adding a resource
+- Git commits themselves
+
+**Log entry format** — keep it tight, 3-5 lines per entry:
+```markdown
+### <Action title>
+
+<1-2 sentences: what happened and outcome>
+
+**Pending**: <next step, if any>
+```
+
+Link to relevant notes with `[[wiki-links]]`. Update the "Next Up" section at the bottom of the log to reflect current state after each entry.
+
 ### Note-Writing Rules
 
 - When creating notes, add `[[wiki-links]]` to related concepts and partners
