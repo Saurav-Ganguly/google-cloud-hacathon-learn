@@ -1,4 +1,4 @@
-# Google Cloud Rapid Agent Hackathon — Resources
+﻿# Google Cloud Rapid Agent Hackathon — Resources
 
 > All tools, frameworks, APIs and learning materials provided for the hackathon.
 
@@ -89,5 +89,5 @@ Pick one partner track and use their MCP server:
 
 ## Related Notes
 
-- [[overview]] — Hackathon summary, prizes, challenge themes, submission checklist
-- [[rules]] — Eligibility, AI tool restrictions, IP rights, legal terms
+- [[hackathon/overview]] — Hackathon summary, prizes, challenge themes, submission checklist
+- [[hackathon/rules]] — Eligibility, AI tool restrictions, IP rights, legal terms

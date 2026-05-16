@@ -1,4 +1,4 @@
-# Dynatrace — MCP Track
+﻿# Dynatrace — MCP Track
 
 **Track resources**: https://rapid-agent.devpost.com/details/dynatrace-resources
 **Status**: Not started
@@ -10,5 +10,5 @@
 *(fill as we brainstorm)*
 
 ## Related
-- [[overview]] — Hackathon overview
+- [[hackathon/overview]] — Hackathon overview
 - [[concepts/mcp]] — MCP protocol

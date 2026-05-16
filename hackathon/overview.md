@@ -1,4 +1,4 @@
-# Google Cloud Rapid Agent Hackathon — Overview
+﻿# Google Cloud Rapid Agent Hackathon — Overview
 
 > **Deadline**: Jun 11, 2026 @ 5:00 PM EDT | **Prize Pool**: $60,000 | **Participants**: 6,077+
 
@@ -91,5 +91,5 @@ Pick exactly one partner and compete within their "bucket":
 
 ## Related Notes
 
-- [[resources]] — Starter kits, APIs, Google Cloud credits, partner docs
-- [[rules]] — Eligibility, submission requirements, legal details
+- [[hackathon/resources]] — Starter kits, APIs, Google Cloud credits, partner docs
+- [[hackathon/rules]] — Eligibility, submission requirements, legal details

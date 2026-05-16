@@ -1,4 +1,4 @@
-# Knowledge Map
+﻿# Knowledge Map
 
 > Entry point for all hackathon research. Navigate here first.
 
@@ -6,10 +6,10 @@
 
 ## Hackathon
 
-- [[overview]] — What we're building, prizes, judging criteria
-- [[rules]] — Eligibility, submission requirements, dates
-- [[resources]] — Starter kits, APIs, Google Cloud credits
-- [[introduction]] — Key links: devpost, ADK, partner resources
+- [[hackathon/overview]] — What we're building, prizes, judging criteria
+- [[hackathon/rules]] — Eligibility, submission requirements, dates
+- [[hackathon/resources]] — Starter kits, APIs, Google Cloud credits
+- [[hackathon/links]] — Key links: devpost, ADK, partner resources
 
 ---
 

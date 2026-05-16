@@ -1,4 +1,4 @@
-# Google Cloud Rapid Agent Hackathon — Rules
+﻿# Google Cloud Rapid Agent Hackathon — Rules
 
 > Official rules summary. Full legal text: https://rapid-agent.devpost.com/rules
 
@@ -125,5 +125,5 @@ Winners selected per track. Ties broken by criterion order, then judge vote.
 
 ## Related Notes
 
-- [[overview]] — What to build, challenge themes, example domains
-- [[resources]] — Starter kits, Google Cloud access, partner MCP docs, events
+- [[hackathon/overview]] — What to build, challenge themes, example domains
+- [[hackathon/resources]] — Starter kits, Google Cloud access, partner MCP docs, events

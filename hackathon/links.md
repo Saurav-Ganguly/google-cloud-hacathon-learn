@@ -1,4 +1,4 @@
-# Quick Links
+﻿# Quick Links
 
 ## Hackathon
 
@@ -13,6 +13,6 @@
 
 ## Related
 
-- [[overview]] — Full hackathon breakdown
-- [[resources]] — Detailed hackathon resource list
+- [[hackathon/overview]] — Full hackathon breakdown
+- [[hackathon/resources]] — Detailed hackathon resource list
 - [[index]] — Knowledge map

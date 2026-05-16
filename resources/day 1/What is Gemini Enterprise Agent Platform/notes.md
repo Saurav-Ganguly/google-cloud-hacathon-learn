@@ -1,4 +1,4 @@
-# What is Gemini Enterprise Agent Platform
+﻿# What is Gemini Enterprise Agent Platform
 
 **Source**: https://www.youtube.com/watch?v=j8qW5poBkEU
 **Presenter**: Holt Skinner, Developer Advocate, Google Cloud AI
@@ -96,6 +96,6 @@ This is the exact platform stack required for the competition:
 
 ## Related Notes
 
-- [[overview]] — Hackathon summary, prizes, challenge themes, submission checklist
-- [[resources]] — Starter kits, APIs, Google Cloud credits, partner docs
-- [[rules]] — Eligibility, submission requirements, legal details
+- [[hackathon/overview]] — Hackathon summary, prizes, challenge themes, submission checklist
+- [[hackathon/resources]] — Starter kits, APIs, Google Cloud credits, partner docs
+- [[hackathon/rules]] — Eligibility, submission requirements, legal details
