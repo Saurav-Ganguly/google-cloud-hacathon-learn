@@ -29,6 +29,8 @@ Note: First deploy may fail (permissions propagation). Click "Update app" after 
 
 ### QS2: Agent Designer — Low-Code Visual Builder
 
+**Status**: Completed 2026-05-16 — see [[logs/2026-05-16]]
+
 1. Agent Studio → Agent tab → Create agent
 2. **Flow tab**: visual canvas, define agent + subagents
 3. **Preview tab**: test via chat as you build
