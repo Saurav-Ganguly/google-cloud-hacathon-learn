@@ -66,6 +66,7 @@ Pick one partner track and use their MCP server:
 | Resource | Link | Use For |
 |----------|------|---------|
 | Cloud Run | [Cloud Run Quickstart](https://cloud.google.com/run/docs/quickstarts) | Host custom agent backends or tool servers |
+| Cloud Run Pricing | [Pricing page](https://cloud.google.com/run/pricing) · [[resources/cloud-run-pricing/notes]] | Free tier: 240k vCPU-sec + 450k GiB-sec/month for Jobs |
 | Safety Settings | [Responsible AI Docs](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai) | Configure guardrails for your agent |
 
 ---
