@@ -37,6 +37,7 @@
 ## Videos & Resources (Day 1)
 
 - [[resources/day 1/What is Gemini Enterprise Agent Platform/notes]] — Agent Platform overview (Holt Skinner)
+- [[resources/day 1/Introducing Agents CLI in Agent Platform/notes]] — agents-cli demo: scaffold → eval → deploy → publish, end-to-end in one session (Pier Paolo Ippolito + Ivan Cheung)
 
 ## Guides & References
 
