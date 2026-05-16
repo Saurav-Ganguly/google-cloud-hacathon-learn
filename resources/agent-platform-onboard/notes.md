@@ -13,6 +13,8 @@ Step-by-step onboarding from zero to deployed autonomous AI agents on Google Clo
 
 ### QS1: Agent Studio — Prompt → Cloud Run App
 
+**Status**: Completed 2026-05-16 — see [[logs/2026-05-16]]
+
 No code. UI-only path.
 
 1. Console → Agent Platform → Studio → New Chat

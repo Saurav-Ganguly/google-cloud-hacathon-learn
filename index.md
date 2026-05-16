@@ -52,6 +52,12 @@
 
 ---
 
+## Daily Logs
+
+- [[logs/2026-05-16]] — QS1 complete: Agent Studio → Cloud Run app deployed
+
+---
+
 ## Ideas
 
 *(none yet)*
