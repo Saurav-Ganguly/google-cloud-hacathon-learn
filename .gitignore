@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Large media files (not needed in repo)
+resources/**/*.mp4
+resources/**/*.webm
+resources/**/*.mkv
