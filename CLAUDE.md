@@ -102,7 +102,19 @@ Raw video files (`*.mp4`, `*.webm`, `*.mkv`, `*.avi`, `*.mov`, `*.wmv`, `*.flv`,
 
 ## When Helping with This Project
 
-- Read `index.md` first to understand current knowledge state
+### Context-First Rule (MANDATORY)
+
+Before answering ANY question or doing ANY task, always search for relevant context in the vault first:
+
+1. Read `index.md` to orient
+2. Identify which files are relevant to the question (concepts, partners, resources, logs, ideas)
+3. Read those files
+4. Then answer — grounded in what's actually in the vault
+
+Never answer from training data alone when vault context exists. If a file seems relevant, read it. This rule applies to every message without exception.
+
+### Note-Writing Rules
+
 - When creating notes, add `[[wiki-links]]` to related concepts and partners
 - When expanding concept stubs, pull facts from ingested resources — don't make things up
 - Partner notes should track: what the MCP server does, what data it exposes, project ideas that could use it
