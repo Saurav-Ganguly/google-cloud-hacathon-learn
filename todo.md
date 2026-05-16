@@ -19,7 +19,8 @@ Things queued up — process before diving deeper.
 
 ## Next Steps
 
-- [ ] Complete gcloud CLI install → `gcloud auth application-default login` → re-run `PYTHONUTF8=1 uvx google-agents-cli setup`
+- [x] Install gcloud CLI — done, installed at `C:\Users\Hp\AppData\Local\Google\Cloud SDK\`
+- [ ] Open new terminal → `gcloud auth application-default login` → re-run `PYTHONUTF8=1 uvx google-agents-cli setup`
 - [ ] Scaffold first agent with agents-cli: understand the full workflow hands-on
 - [ ] Learn how to make agents with ADK + agents-cli (QS3 proper)
 
