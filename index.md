@@ -40,6 +40,13 @@
 
 ---
 
+## General Learning
+
+- [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — curated real LLM app examples, good for project inspiration
+- [The Unwind AI](https://www.theunwindai.com/) — AI tutorials and agent walkthroughs
+
+---
+
 ## Ideas
 
 *(none yet)*
