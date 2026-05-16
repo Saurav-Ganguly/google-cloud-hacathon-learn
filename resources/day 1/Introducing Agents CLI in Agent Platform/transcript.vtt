@@ -1,0 +1,936 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.030 align:start position:0%
+ 
+Hello<00:00:00.400><c> everyone.</c><00:00:01.280><c> We</c><00:00:01.440><c> often</c><00:00:01.720><c> hear</c><00:00:01.880><c> from</c>
+
+00:00:02.030 --> 00:00:02.040 align:start position:0%
+Hello everyone. We often hear from
+ 
+
+00:00:02.040 --> 00:00:04.030 align:start position:0%
+Hello everyone. We often hear from
+developers<00:00:02.720><c> that</c><00:00:02.880><c> building</c><00:00:03.360><c> agents</c><00:00:03.840><c> on</c><00:00:03.920><c> the</c>
+
+00:00:04.030 --> 00:00:04.040 align:start position:0%
+developers that building agents on the
+ 
+
+00:00:04.040 --> 00:00:04.574 align:start position:0%
+developers that building agents on the
+cloud
+
+00:00:04.574 --> 00:00:04.584 align:start position:0%
+cloud
+ 
+
+00:00:04.584 --> 00:00:04.710 align:start position:0%
+cloud
+&gt;&gt; [music]
+
+00:00:04.710 --> 00:00:04.720 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:00:04.720 --> 00:00:06.310 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; today<00:00:04.960><c> is</c><00:00:05.080><c> fragmented.</c>
+
+00:00:06.310 --> 00:00:06.320 align:start position:0%
+&gt;&gt; today is fragmented.
+ 
+
+00:00:06.320 --> 00:00:08.350 align:start position:0%
+&gt;&gt; today is fragmented.
+Yeah,<00:00:07.040><c> and</c><00:00:07.160><c> if</c><00:00:07.320><c> you</c><00:00:07.440><c> ask</c><00:00:07.640><c> your</c><00:00:07.800><c> AI</c><00:00:08.000><c> coding</c>
+
+00:00:08.350 --> 00:00:08.360 align:start position:0%
+Yeah, and if you ask your AI coding
+ 
+
+00:00:08.360 --> 00:00:10.510 align:start position:0%
+Yeah, and if you ask your AI coding
+assistant<00:00:08.760><c> to</c><00:00:08.880><c> help,</c><00:00:09.600><c> it</c><00:00:09.720><c> just</c><00:00:09.920><c> gets</c><00:00:10.120><c> stuck</c><00:00:10.400><c> in</c>
+
+00:00:10.510 --> 00:00:10.520 align:start position:0%
+assistant to help, it just gets stuck in
+ 
+
+00:00:10.520 --> 00:00:12.110 align:start position:0%
+assistant to help, it just gets stuck in
+an<00:00:10.680><c> endless</c><00:00:11.120><c> loop</c><00:00:11.360><c> hallucinating</c><00:00:11.790><c> [music]</c>
+
+00:00:12.110 --> 00:00:12.120 align:start position:0%
+an endless loop hallucinating [music]
+ 
+
+00:00:12.120 --> 00:00:15.150 align:start position:0%
+an endless loop hallucinating [music]
+APIs.<00:00:12.960><c> It</c><00:00:13.080><c> can</c><00:00:13.200><c> be</c><00:00:13.320><c> pretty</c><00:00:13.560><c> messy.</c><00:00:14.360><c> So</c><00:00:14.560><c> today,</c>
+
+00:00:15.150 --> 00:00:15.160 align:start position:0%
+APIs. It can be pretty messy. So today,
+ 
+
+00:00:15.160 --> 00:00:17.470 align:start position:0%
+APIs. It can be pretty messy. So today,
+we<00:00:15.280><c> are</c><00:00:15.400><c> super</c><00:00:15.800><c> excited</c><00:00:16.240><c> to</c><00:00:16.320><c> announce</c><00:00:17.040><c> Agency</c>
+
+00:00:17.470 --> 00:00:17.480 align:start position:0%
+we are super excited to announce Agency
+ 
+
+00:00:17.480 --> 00:00:18.330 align:start position:0%
+we are super excited to announce Agency
+CLI.
+
+00:00:18.330 --> 00:00:18.340 align:start position:0%
+CLI.
+ 
+
+00:00:18.340 --> 00:00:20.230 align:start position:0%
+CLI.
+&gt;&gt; [music]
+
+00:00:20.230 --> 00:00:20.240 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:00:20.240 --> 00:00:22.510 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; It's<00:00:20.520><c> a</c><00:00:20.560><c> single</c><00:00:20.880><c> tool</c><00:00:21.280><c> that</c><00:00:21.440><c> makes</c><00:00:21.920><c> building</c>
+
+00:00:22.510 --> 00:00:22.520 align:start position:0%
+&gt;&gt; It's a single tool that makes building
+ 
+
+00:00:22.520 --> 00:00:25.510 align:start position:0%
+&gt;&gt; It's a single tool that makes building
+and<00:00:22.680><c> deploying</c><00:00:23.280><c> ADK</c><00:00:23.600><c> agents</c><00:00:24.200><c> super</c><00:00:24.600><c> simple.</c>
+
+00:00:25.510 --> 00:00:25.520 align:start position:0%
+and deploying ADK agents super simple.
+ 
+
+00:00:25.520 --> 00:00:26.750 align:start position:0%
+and deploying ADK agents super simple.
+Not<00:00:25.640><c> just</c><00:00:25.840><c> for</c><00:00:25.960><c> you,</c>
+
+00:00:26.750 --> 00:00:26.760 align:start position:0%
+Not just for you,
+ 
+
+00:00:26.760 --> 00:00:28.550 align:start position:0%
+Not just for you,
+but<00:00:26.920><c> also</c><00:00:27.120><c> for</c><00:00:27.240><c> your</c><00:00:27.360><c> coding</c><00:00:27.640><c> agent,</c><00:00:27.880><c> too.</c>
+
+00:00:28.550 --> 00:00:28.560 align:start position:0%
+but also for your coding agent, too.
+ 
+
+00:00:28.560 --> 00:00:31.430 align:start position:0%
+but also for your coding agent, too.
+Like<00:00:29.120><c> Gemini</c><00:00:29.520><c> CLI,</c><00:00:30.200><c> Antigravity,</c><00:00:31.160><c> or</c><00:00:31.280><c> any</c>
+
+00:00:31.430 --> 00:00:31.440 align:start position:0%
+Like Gemini CLI, Antigravity, or any
+ 
+
+00:00:31.440 --> 00:00:33.190 align:start position:0%
+Like Gemini CLI, Antigravity, or any
+other<00:00:31.600><c> coding</c><00:00:31.840><c> agent</c><00:00:32.119><c> you</c><00:00:32.200><c> already</c><00:00:32.480><c> use.</c>
+
+00:00:33.190 --> 00:00:33.200 align:start position:0%
+other coding agent you already use.
+ 
+
+00:00:33.200 --> 00:00:35.710 align:start position:0%
+other coding agent you already use.
+That's<00:00:33.560><c> right.</c><00:00:34.360><c> Think</c><00:00:34.560><c> of</c><00:00:34.720><c> Agency</c><00:00:35.160><c> CLI</c><00:00:35.480><c> as</c><00:00:35.640><c> a</c>
+
+00:00:35.710 --> 00:00:35.720 align:start position:0%
+That's right. Think of Agency CLI as a
+ 
+
+00:00:35.720 --> 00:00:38.390 align:start position:0%
+That's right. Think of Agency CLI as a
+bridge.<00:00:36.480><c> It</c><00:00:36.600><c> packages</c><00:00:37.440><c> all</c><00:00:37.680><c> the</c><00:00:37.800><c> Google</c><00:00:38.080><c> Cloud</c>
+
+00:00:38.390 --> 00:00:38.400 align:start position:0%
+bridge. It packages all the Google Cloud
+ 
+
+00:00:38.400 --> 00:00:40.470 align:start position:0%
+bridge. It packages all the Google Cloud
+tools<00:00:38.760><c> you</c><00:00:38.880><c> need</c><00:00:39.280><c> into</c><00:00:39.520><c> a</c><00:00:39.560><c> simple</c><00:00:40.080><c> command</c>
+
+00:00:40.470 --> 00:00:40.480 align:start position:0%
+tools you need into a simple command
+ 
+
+00:00:40.480 --> 00:00:43.390 align:start position:0%
+tools you need into a simple command
+line<00:00:40.720><c> interface.</c><00:00:41.840><c> But</c><00:00:42.000><c> the</c><00:00:42.080><c> best</c><00:00:42.360><c> part,</c><00:00:43.160><c> it</c>
+
+00:00:43.390 --> 00:00:43.400 align:start position:0%
+line interface. But the best part, it
+ 
+
+00:00:43.400 --> 00:00:45.590 align:start position:0%
+line interface. But the best part, it
+comes<00:00:43.720><c> with</c><00:00:43.880><c> a</c><00:00:43.920><c> set</c><00:00:44.280><c> of</c><00:00:44.400><c> skills</c><00:00:45.040><c> to</c><00:00:45.200><c> guide</c><00:00:45.520><c> the</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+comes with a set of skills to guide the
+ 
+
+00:00:45.600 --> 00:00:48.030 align:start position:0%
+comes with a set of skills to guide the
+coding<00:00:45.960><c> agent</c><00:00:46.360><c> throughout</c><00:00:46.840><c> the</c><00:00:46.920><c> process.</c><00:00:47.840><c> And</c>
+
+00:00:48.030 --> 00:00:48.040 align:start position:0%
+coding agent throughout the process. And
+ 
+
+00:00:48.040 --> 00:00:50.750 align:start position:0%
+coding agent throughout the process. And
+that<00:00:48.200><c> means</c><00:00:48.880><c> your</c><00:00:49.360><c> AI</c><00:00:49.600><c> coding</c><00:00:49.880><c> assistant,</c>
+
+00:00:50.750 --> 00:00:50.760 align:start position:0%
+that means your AI coding assistant,
+ 
+
+00:00:50.760 --> 00:00:53.070 align:start position:0%
+that means your AI coding assistant,
+like<00:00:50.960><c> Gemini</c><00:00:51.320><c> CLI,</c><00:00:51.840><c> can</c><00:00:52.000><c> actually</c><00:00:52.360><c> use</c><00:00:52.960><c> the</c>
+
+00:00:53.070 --> 00:00:53.080 align:start position:0%
+like Gemini CLI, can actually use the
+ 
+
+00:00:53.080 --> 00:00:55.190 align:start position:0%
+like Gemini CLI, can actually use the
+Agency<00:00:53.440><c> CLI</c><00:00:53.920><c> to</c><00:00:54.120><c> build</c><00:00:54.520><c> other</c><00:00:54.800><c> agents</c><00:00:55.080><c> for</c>
+
+00:00:55.190 --> 00:00:55.200 align:start position:0%
+Agency CLI to build other agents for
+ 
+
+00:00:55.200 --> 00:00:57.710 align:start position:0%
+Agency CLI to build other agents for
+you.<00:00:55.840><c> Let's</c><00:00:56.040><c> say</c><00:00:56.560><c> I</c><00:00:56.720><c> want</c><00:00:56.920><c> our</c><00:00:57.040><c> team</c><00:00:57.320><c> to</c><00:00:57.480><c> build</c>
+
+00:00:57.710 --> 00:00:57.720 align:start position:0%
+you. Let's say I want our team to build
+ 
+
+00:00:57.720 --> 00:00:59.990 align:start position:0%
+you. Let's say I want our team to build
+us<00:00:57.960><c> an</c><00:00:58.160><c> outage</c><00:00:58.520><c> recovery</c><00:00:58.960><c> bot.</c>
+
+00:00:59.990 --> 00:01:00.000 align:start position:0%
+us an outage recovery bot.
+ 
+
+00:01:00.000 --> 00:01:02.190 align:start position:0%
+us an outage recovery bot.
+Something<00:01:00.440><c> that</c><00:01:00.600><c> can</c><00:01:01.000><c> automatically</c>
+
+00:01:02.190 --> 00:01:02.200 align:start position:0%
+Something that can automatically
+ 
+
+00:01:02.200 --> 00:01:04.310 align:start position:0%
+Something that can automatically
+investigate<00:01:02.920><c> service</c><00:01:03.320><c> interruptions.</c><00:01:04.160><c> How</c>
+
+00:01:04.310 --> 00:01:04.320 align:start position:0%
+investigate service interruptions. How
+ 
+
+00:01:04.320 --> 00:01:06.550 align:start position:0%
+investigate service interruptions. How
+does<00:01:04.600><c> this</c><00:01:04.760><c> CLI</c><00:01:05.199><c> actually</c><00:01:05.640><c> speed</c><00:01:06.000><c> up</c><00:01:06.360><c> that</c>
+
+00:01:06.550 --> 00:01:06.560 align:start position:0%
+does this CLI actually speed up that
+ 
+
+00:01:06.560 --> 00:01:08.630 align:start position:0%
+does this CLI actually speed up that
+initialization<00:01:07.120><c> process?</c><00:01:07.840><c> Why</c><00:01:08.160><c> is</c><00:01:08.400><c> this</c>
+
+00:01:08.630 --> 00:01:08.640 align:start position:0%
+initialization process? Why is this
+ 
+
+00:01:08.640 --> 00:01:10.750 align:start position:0%
+initialization process? Why is this
+better<00:01:09.000><c> than</c><00:01:09.160><c> starting</c><00:01:09.520><c> from</c><00:01:09.640><c> scratch?</c><00:01:10.480><c> It's</c>
+
+00:01:10.750 --> 00:01:10.760 align:start position:0%
+better than starting from scratch? It's
+ 
+
+00:01:10.760 --> 00:01:12.350 align:start position:0%
+better than starting from scratch? It's
+because<00:01:11.200><c> I'm</c><00:01:11.360><c> not</c><00:01:11.560><c> writing</c><00:01:11.960><c> any</c><00:01:12.160><c> of</c><00:01:12.280><c> the</c>
+
+00:01:12.350 --> 00:01:12.360 align:start position:0%
+because I'm not writing any of the
+ 
+
+00:01:12.360 --> 00:01:14.630 align:start position:0%
+because I'm not writing any of the
+boilerplate.<00:01:13.320><c> I'm</c><00:01:13.480><c> letting</c><00:01:13.720><c> my</c><00:01:13.880><c> AI</c><00:01:14.160><c> agent</c><00:01:14.520><c> do</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+boilerplate. I'm letting my AI agent do
+ 
+
+00:01:14.640 --> 00:01:17.190 align:start position:0%
+boilerplate. I'm letting my AI agent do
+it.<00:01:15.000><c> I</c><00:01:15.120><c> just</c><00:01:15.360><c> tell</c><00:01:15.520><c> Gemini</c><00:01:15.880><c> CLI,</c><00:01:16.800><c> I</c><00:01:16.920><c> need</c><00:01:17.120><c> to</c>
+
+00:01:17.190 --> 00:01:17.200 align:start position:0%
+it. I just tell Gemini CLI, I need to
+ 
+
+00:01:17.200 --> 00:01:19.310 align:start position:0%
+it. I just tell Gemini CLI, I need to
+build<00:01:17.440><c> an</c><00:01:17.600><c> outage</c><00:01:17.880><c> recovery</c><00:01:18.400><c> agent</c><00:01:19.040><c> that</c><00:01:19.200><c> can</c>
+
+00:01:19.310 --> 00:01:19.320 align:start position:0%
+build an outage recovery agent that can
+ 
+
+00:01:19.320 --> 00:01:21.910 align:start position:0%
+build an outage recovery agent that can
+parse<00:01:19.680><c> server</c><00:01:19.960><c> logs,</c><00:01:20.640><c> classify</c><00:01:21.240><c> incidents</c><00:01:21.800><c> by</c>
+
+00:01:21.910 --> 00:01:21.920 align:start position:0%
+parse server logs, classify incidents by
+ 
+
+00:01:21.920 --> 00:01:24.590 align:start position:0%
+parse server logs, classify incidents by
+severity,<00:01:22.880><c> and</c><00:01:23.080><c> generate</c><00:01:23.560><c> incident</c><00:01:23.960><c> reports.</c>
+
+00:01:24.590 --> 00:01:24.600 align:start position:0%
+severity, and generate incident reports.
+ 
+
+00:01:24.600 --> 00:01:27.030 align:start position:0%
+severity, and generate incident reports.
+I<00:01:24.760><c> also</c><00:01:25.040><c> specify</c><00:01:25.600><c> to</c><00:01:25.760><c> use</c><00:01:26.360><c> Google's</c><00:01:26.800><c> Agent</c>
+
+00:01:27.030 --> 00:01:27.040 align:start position:0%
+I also specify to use Google's Agent
+ 
+
+00:01:27.040 --> 00:01:28.870 align:start position:0%
+I also specify to use Google's Agent
+Development<00:01:27.480><c> Kit</c><00:01:27.920><c> and</c><00:01:28.120><c> deploy</c><00:01:28.480><c> to</c><00:01:28.600><c> Google</c>
+
+00:01:28.870 --> 00:01:28.880 align:start position:0%
+Development Kit and deploy to Google
+ 
+
+00:01:28.880 --> 00:01:31.710 align:start position:0%
+Development Kit and deploy to Google
+Cloud.<00:01:29.720><c> First,</c><00:01:30.240><c> Gemini</c><00:01:30.640><c> CLI</c><00:01:31.080><c> activates</c><00:01:31.640><c> the</c>
+
+00:01:31.710 --> 00:01:31.720 align:start position:0%
+Cloud. First, Gemini CLI activates the
+ 
+
+00:01:31.720 --> 00:01:33.710 align:start position:0%
+Cloud. First, Gemini CLI activates the
+bundled<00:01:32.120><c> scaffold</c><00:01:32.600><c> skill</c><00:01:33.080><c> to</c><00:01:33.240><c> learn</c><00:01:33.480><c> how</c><00:01:33.600><c> to</c>
+
+00:01:33.710 --> 00:01:33.720 align:start position:0%
+bundled scaffold skill to learn how to
+ 
+
+00:01:33.720 --> 00:01:36.750 align:start position:0%
+bundled scaffold skill to learn how to
+create<00:01:34.160><c> an</c><00:01:34.280><c> ADK</c><00:01:34.680><c> project.</c><00:01:35.680><c> Then,</c><00:01:36.080><c> it</c><00:01:36.240><c> runs</c><00:01:36.520><c> the</c>
+
+00:01:36.750 --> 00:01:36.760 align:start position:0%
+create an ADK project. Then, it runs the
+ 
+
+00:01:36.760 --> 00:01:39.150 align:start position:0%
+create an ADK project. Then, it runs the
+init<00:01:37.120><c> command,</c><00:01:37.800><c> which</c><00:01:38.080><c> generates</c><00:01:38.560><c> a</c><00:01:38.640><c> standard</c>
+
+00:01:39.150 --> 00:01:39.160 align:start position:0%
+init command, which generates a standard
+ 
+
+00:01:39.160 --> 00:01:42.230 align:start position:0%
+init command, which generates a standard
+ADK<00:01:39.600><c> folder</c><00:01:39.960><c> structure.</c><00:01:40.960><c> Next,</c><00:01:41.560><c> it</c><00:01:41.720><c> modifies</c>
+
+00:01:42.230 --> 00:01:42.240 align:start position:0%
+ADK folder structure. Next, it modifies
+ 
+
+00:01:42.240 --> 00:01:44.670 align:start position:0%
+ADK folder structure. Next, it modifies
+the<00:01:42.360><c> boilerplate</c><00:01:43.000><c> code</c><00:01:43.520><c> to</c><00:01:43.640><c> match</c><00:01:44.040><c> our</c><00:01:44.320><c> outage</c>
+
+00:01:44.670 --> 00:01:44.680 align:start position:0%
+the boilerplate code to match our outage
+ 
+
+00:01:44.680 --> 00:01:47.270 align:start position:0%
+the boilerplate code to match our outage
+recovery<00:01:45.240><c> use</c><00:01:45.480><c> case.</c><00:01:46.400><c> Testing</c><00:01:46.800><c> a</c><00:01:46.880><c> few</c><00:01:47.000><c> prompts</c>
+
+00:01:47.270 --> 00:01:47.280 align:start position:0%
+recovery use case. Testing a few prompts
+ 
+
+00:01:47.280 --> 00:01:49.670 align:start position:0%
+recovery use case. Testing a few prompts
+is<00:01:47.400><c> fine</c><00:01:47.920><c> for</c><00:01:48.080><c> a</c><00:01:48.120><c> quick</c><00:01:48.320><c> check.</c><00:01:49.040><c> But</c><00:01:49.440><c> at</c><00:01:49.600><c> an</c>
+
+00:01:49.670 --> 00:01:49.680 align:start position:0%
+is fine for a quick check. But at an
+ 
+
+00:01:49.680 --> 00:01:51.750 align:start position:0%
+is fine for a quick check. But at an
+enterprise<00:01:50.120><c> level,</c><00:01:50.800><c> how</c><00:01:51.040><c> do</c><00:01:51.200><c> we</c><00:01:51.320><c> guarantee</c>
+
+00:01:51.750 --> 00:01:51.760 align:start position:0%
+enterprise level, how do we guarantee
+ 
+
+00:01:51.760 --> 00:01:54.350 align:start position:0%
+enterprise level, how do we guarantee
+quality?<00:01:52.560><c> How</c><00:01:52.800><c> do</c><00:01:53.000><c> we</c><00:01:53.440><c> definitely</c><00:01:53.920><c> measure</c>
+
+00:01:54.350 --> 00:01:54.360 align:start position:0%
+quality? How do we definitely measure
+ 
+
+00:01:54.360 --> 00:01:56.630 align:start position:0%
+quality? How do we definitely measure
+that<00:01:54.600><c> this</c><00:01:54.800><c> bot</c><00:01:55.320><c> won't</c><00:01:55.560><c> hallucinate</c><00:01:56.360><c> the</c><00:01:56.440><c> root</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+that this bot won't hallucinate the root
+ 
+
+00:01:56.640 --> 00:01:58.390 align:start position:0%
+that this bot won't hallucinate the root
+cause<00:01:56.920><c> of</c><00:01:57.040><c> an</c><00:01:57.160><c> outage?</c><00:01:57.760><c> That's</c><00:01:58.080><c> where</c><00:01:58.240><c> we</c>
+
+00:01:58.390 --> 00:01:58.400 align:start position:0%
+cause of an outage? That's where we
+ 
+
+00:01:58.400 --> 00:02:00.830 align:start position:0%
+cause of an outage? That's where we
+bring<00:01:58.680><c> in</c><00:01:58.880><c> the</c><00:01:59.120><c> evaluation</c><00:01:59.760><c> harness.</c><00:02:00.560><c> Before</c>
+
+00:02:00.830 --> 00:02:00.840 align:start position:0%
+bring in the evaluation harness. Before
+ 
+
+00:02:00.840 --> 00:02:03.550 align:start position:0%
+bring in the evaluation harness. Before
+deploying,<00:02:01.560><c> I</c><00:02:01.640><c> can</c><00:02:01.840><c> ask</c><00:02:02.040><c> the</c><00:02:02.160><c> AI,</c><00:02:03.120><c> "Run</c><00:02:03.400><c> the</c>
+
+00:02:03.550 --> 00:02:03.560 align:start position:0%
+deploying, I can ask the AI, "Run the
+ 
+
+00:02:03.560 --> 00:02:05.790 align:start position:0%
+deploying, I can ask the AI, "Run the
+evaluations<00:02:04.520><c> for</c><00:02:04.720><c> the</c><00:02:04.880><c> outage</c><00:02:05.280><c> recovery</c>
+
+00:02:05.790 --> 00:02:05.800 align:start position:0%
+evaluations for the outage recovery
+ 
+
+00:02:05.800 --> 00:02:08.430 align:start position:0%
+evaluations for the outage recovery
+agent<00:02:06.400><c> using</c><00:02:06.760><c> the</c><00:02:06.880><c> Agency</c><00:02:07.360><c> CLI</c><00:02:08.000><c> and</c><00:02:08.119><c> show</c><00:02:08.320><c> me</c>
+
+00:02:08.430 --> 00:02:08.440 align:start position:0%
+agent using the Agency CLI and show me
+ 
+
+00:02:08.440 --> 00:02:10.270 align:start position:0%
+agent using the Agency CLI and show me
+the<00:02:08.560><c> results."</c><00:02:09.320><c> You</c><00:02:09.440><c> can</c><00:02:09.600><c> see</c><00:02:09.800><c> it</c><00:02:09.960><c> adding</c>
+
+00:02:10.270 --> 00:02:10.280 align:start position:0%
+the results." You can see it adding
+ 
+
+00:02:10.280 --> 00:02:12.510 align:start position:0%
+the results." You can see it adding
+evaluation<00:02:10.960><c> scenarios,</c><00:02:11.840><c> which</c><00:02:12.040><c> include</c>
+
+00:02:12.510 --> 00:02:12.520 align:start position:0%
+evaluation scenarios, which include
+ 
+
+00:02:12.520 --> 00:02:14.510 align:start position:0%
+evaluation scenarios, which include
+hypothetical<00:02:13.240><c> user</c><00:02:13.520><c> conversations,</c>
+
+00:02:14.510 --> 00:02:14.520 align:start position:0%
+hypothetical user conversations,
+ 
+
+00:02:14.520 --> 00:02:16.510 align:start position:0%
+hypothetical user conversations,
+expected<00:02:15.080><c> tool</c><00:02:15.320><c> calls,</c><00:02:15.960><c> and</c><00:02:16.160><c> judging</c>
+
+00:02:16.510 --> 00:02:16.520 align:start position:0%
+expected tool calls, and judging
+ 
+
+00:02:16.520 --> 00:02:19.110 align:start position:0%
+expected tool calls, and judging
+criteria<00:02:17.240><c> for</c><00:02:17.400><c> an</c><00:02:17.520><c> LLM</c><00:02:18.000><c> judge.</c><00:02:18.640><c> The</c><00:02:18.760><c> agent</c>
+
+00:02:19.110 --> 00:02:19.120 align:start position:0%
+criteria for an LLM judge. The agent
+ 
+
+00:02:19.120 --> 00:02:21.830 align:start position:0%
+criteria for an LLM judge. The agent
+then<00:02:19.320><c> runs</c><00:02:19.640><c> Agency</c><00:02:20.160><c> CLI</c><00:02:20.600><c> eval</c><00:02:21.040><c> run.</c><00:02:21.640><c> This</c>
+
+00:02:21.830 --> 00:02:21.840 align:start position:0%
+then runs Agency CLI eval run. This
+ 
+
+00:02:21.840 --> 00:02:23.470 align:start position:0%
+then runs Agency CLI eval run. This
+command<00:02:22.240><c> tests</c><00:02:22.560><c> our</c><00:02:22.720><c> bot</c><00:02:23.000><c> against</c><00:02:23.400><c> the</c>
+
+00:02:23.470 --> 00:02:23.480 align:start position:0%
+command tests our bot against the
+ 
+
+00:02:23.480 --> 00:02:26.270 align:start position:0%
+command tests our bot against the
+scenarios<00:02:24.120><c> that</c><00:02:24.320><c> we</c><00:02:24.400><c> just</c><00:02:24.680><c> created.</c><00:02:25.400><c> Oh,</c><00:02:26.120><c> look</c>
+
+00:02:26.270 --> 00:02:26.280 align:start position:0%
+scenarios that we just created. Oh, look
+ 
+
+00:02:26.280 --> 00:02:29.070 align:start position:0%
+scenarios that we just created. Oh, look
+at<00:02:26.360><c> that</c><00:02:26.520><c> output.</c><00:02:27.240><c> On</c><00:02:27.600><c> our</c><00:02:27.960><c> three</c><00:02:28.160><c> test</c><00:02:28.400><c> cases,</c>
+
+00:02:29.070 --> 00:02:29.080 align:start position:0%
+at that output. On our three test cases,
+ 
+
+00:02:29.080 --> 00:02:31.270 align:start position:0%
+at that output. On our three test cases,
+we<00:02:29.200><c> have</c><00:02:29.360><c> achieved</c><00:02:29.880><c> a</c><00:02:30.000><c> perfect</c><00:02:30.360><c> score</c><00:02:31.000><c> across</c>
+
+00:02:31.270 --> 00:02:31.280 align:start position:0%
+we have achieved a perfect score across
+ 
+
+00:02:31.280 --> 00:02:33.430 align:start position:0%
+we have achieved a perfect score across
+multiple<00:02:32.240><c> criteria,</c><00:02:32.840><c> including</c><00:02:33.200><c> response</c>
+
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+multiple criteria, including response
+ 
+
+00:02:33.440 --> 00:02:36.270 align:start position:0%
+multiple criteria, including response
+relevance,<00:02:34.200><c> answer</c><00:02:34.560><c> accuracy,</c><00:02:35.480><c> and</c><00:02:35.800><c> expected</c>
+
+00:02:36.270 --> 00:02:36.280 align:start position:0%
+relevance, answer accuracy, and expected
+ 
+
+00:02:36.280 --> 00:02:38.630 align:start position:0%
+relevance, answer accuracy, and expected
+actions.<00:02:36.960><c> This</c><00:02:37.240><c> definitely</c><00:02:37.720><c> gives</c><00:02:37.960><c> me</c><00:02:38.400><c> more</c>
+
+00:02:38.630 --> 00:02:38.640 align:start position:0%
+actions. This definitely gives me more
+ 
+
+00:02:38.640 --> 00:02:41.030 align:start position:0%
+actions. This definitely gives me more
+confidence<00:02:39.640><c> we</c><00:02:39.760><c> can</c><00:02:39.880><c> actually</c><00:02:40.200><c> ship</c><00:02:40.440><c> this.</c>
+
+00:02:41.030 --> 00:02:41.040 align:start position:0%
+confidence we can actually ship this.
+ 
+
+00:02:41.040 --> 00:02:42.710 align:start position:0%
+confidence we can actually ship this.
+All<00:02:41.160><c> right,</c><00:02:41.400><c> now</c><00:02:41.600><c> we</c><00:02:41.720><c> have</c><00:02:41.880><c> a</c><00:02:42.160><c> working</c>
+
+00:02:42.710 --> 00:02:42.720 align:start position:0%
+All right, now we have a working
+ 
+
+00:02:42.720 --> 00:02:44.910 align:start position:0%
+All right, now we have a working
+evaluated<00:02:43.160><c> agent.</c><00:02:43.920><c> But</c><00:02:44.160><c> moving</c><00:02:44.440><c> from</c><00:02:44.600><c> a</c><00:02:44.680><c> local</c>
+
+00:02:44.910 --> 00:02:44.920 align:start position:0%
+evaluated agent. But moving from a local
+ 
+
+00:02:44.920 --> 00:02:47.510 align:start position:0%
+evaluated agent. But moving from a local
+laptop<00:02:45.560><c> to</c><00:02:45.640><c> production</c><00:02:46.520><c> usually</c><00:02:47.080><c> involves</c>
+
+00:02:47.510 --> 00:02:47.520 align:start position:0%
+laptop to production usually involves
+ 
+
+00:02:47.520 --> 00:02:51.110 align:start position:0%
+laptop to production usually involves
+infrastructure<00:02:48.080><c> headaches,</c><00:02:49.040><c> like</c><00:02:49.800><c> IAM</c><00:02:50.200><c> roles</c>
+
+00:02:51.110 --> 00:02:51.120 align:start position:0%
+infrastructure headaches, like IAM roles
+ 
+
+00:02:51.120 --> 00:02:53.590 align:start position:0%
+infrastructure headaches, like IAM roles
+and<00:02:51.280><c> secret</c><00:02:51.520><c> management.</c><00:02:52.360><c> How</c><00:02:52.520><c> does</c><00:02:52.840><c> this</c><00:02:53.040><c> CLI</c>
+
+00:02:53.590 --> 00:02:53.600 align:start position:0%
+and secret management. How does this CLI
+ 
+
+00:02:53.600 --> 00:02:56.070 align:start position:0%
+and secret management. How does this CLI
+actually<00:02:54.360><c> handle</c><00:02:54.680><c> the</c><00:02:54.800><c> deployment</c><00:02:55.200><c> securely?</c>
+
+00:02:56.070 --> 00:02:56.080 align:start position:0%
+actually handle the deployment securely?
+ 
+
+00:02:56.080 --> 00:02:58.870 align:start position:0%
+actually handle the deployment securely?
+It<00:02:56.560><c> can</c><00:02:56.840><c> completely</c><00:02:57.600><c> automate</c><00:02:58.080><c> it.</c><00:02:58.520><c> So,</c><00:02:58.760><c> I'll</c>
+
+00:02:58.870 --> 00:02:58.880 align:start position:0%
+It can completely automate it. So, I'll
+ 
+
+00:02:58.880 --> 00:03:01.230 align:start position:0%
+It can completely automate it. So, I'll
+just<00:02:59.120><c> tell</c><00:02:59.320><c> Gemini</c><00:02:59.640><c> CLI,</c>
+
+00:03:01.230 --> 00:03:01.240 align:start position:0%
+just tell Gemini CLI,
+ 
+
+00:03:01.240 --> 00:03:03.070 align:start position:0%
+just tell Gemini CLI,
+"Let's<00:03:01.600><c> deploy</c><00:03:01.960><c> this</c><00:03:02.160><c> agent</c><00:03:02.600><c> to</c><00:03:02.800><c> Google</c>
+
+00:03:03.070 --> 00:03:03.080 align:start position:0%
+"Let's deploy this agent to Google
+ 
+
+00:03:03.080 --> 00:03:05.990 align:start position:0%
+"Let's deploy this agent to Google
+Cloud."<00:03:03.840><c> The</c><00:03:04.040><c> AI</c><00:03:04.400><c> runs</c><00:03:04.760><c> the</c><00:03:04.920><c> deploy</c><00:03:05.360><c> command</c>
+
+00:03:05.990 --> 00:03:06.000 align:start position:0%
+Cloud." The AI runs the deploy command
+ 
+
+00:03:06.000 --> 00:03:09.270 align:start position:0%
+Cloud." The AI runs the deploy command
+to<00:03:06.120><c> push</c><00:03:06.480><c> the</c><00:03:06.640><c> agent</c><00:03:07.200><c> to</c><00:03:07.640><c> agent</c><00:03:08.040><c> runtime.</c>
+
+00:03:09.270 --> 00:03:09.280 align:start position:0%
+to push the agent to agent runtime.
+ 
+
+00:03:09.280 --> 00:03:11.590 align:start position:0%
+to push the agent to agent runtime.
+Awesome.<00:03:09.760><c> So,</c><00:03:10.480><c> it's</c><00:03:10.640><c> deployed.</c>
+
+00:03:11.590 --> 00:03:11.600 align:start position:0%
+Awesome. So, it's deployed.
+ 
+
+00:03:11.600 --> 00:03:13.590 align:start position:0%
+Awesome. So, it's deployed.
+But<00:03:11.960><c> how</c><00:03:12.160><c> does</c><00:03:12.520><c> our</c><00:03:12.680><c> actual</c><00:03:13.000><c> team</c><00:03:13.200><c> interact</c>
+
+00:03:13.590 --> 00:03:13.600 align:start position:0%
+But how does our actual team interact
+ 
+
+00:03:13.600 --> 00:03:15.510 align:start position:0%
+But how does our actual team interact
+with<00:03:13.720><c> it?</c><00:03:14.480><c> We</c><00:03:14.600><c> don't</c><00:03:14.760><c> want</c><00:03:14.920><c> to</c><00:03:15.000><c> build</c><00:03:15.240><c> custom</c>
+
+00:03:15.510 --> 00:03:15.520 align:start position:0%
+with it? We don't want to build custom
+ 
+
+00:03:15.520 --> 00:03:17.430 align:start position:0%
+with it? We don't want to build custom
+front<00:03:15.760><c> ends.</c><00:03:16.320><c> We</c><00:03:16.400><c> just</c><00:03:16.560><c> want</c><00:03:16.760><c> to</c><00:03:17.080><c> interact</c>
+
+00:03:17.430 --> 00:03:17.440 align:start position:0%
+front ends. We just want to interact
+ 
+
+00:03:17.440 --> 00:03:19.750 align:start position:0%
+front ends. We just want to interact
+with<00:03:17.520><c> this</c><00:03:17.680><c> bot.</c><00:03:18.160><c> We</c><00:03:18.320><c> don't</c><00:03:18.520><c> have</c><00:03:18.720><c> to.</c><00:03:19.440><c> We</c><00:03:19.600><c> can</c>
+
+00:03:19.750 --> 00:03:19.760 align:start position:0%
+with this bot. We don't have to. We can
+ 
+
+00:03:19.760 --> 00:03:22.110 align:start position:0%
+with this bot. We don't have to. We can
+just<00:03:20.000><c> register</c><00:03:20.520><c> it</c><00:03:20.720><c> directly</c><00:03:21.360><c> to</c><00:03:21.680><c> Gemini</c>
+
+00:03:22.110 --> 00:03:22.120 align:start position:0%
+just register it directly to Gemini
+ 
+
+00:03:22.120 --> 00:03:23.910 align:start position:0%
+just register it directly to Gemini
+Enterprise.<00:03:23.000><c> I'll</c><00:03:23.160><c> just</c><00:03:23.320><c> tell</c><00:03:23.440><c> my</c><00:03:23.560><c> coding</c>
+
+00:03:23.910 --> 00:03:23.920 align:start position:0%
+Enterprise. I'll just tell my coding
+ 
+
+00:03:23.920 --> 00:03:26.230 align:start position:0%
+Enterprise. I'll just tell my coding
+agent,<00:03:24.320><c> "Can</c><00:03:24.760><c> you</c><00:03:25.000><c> integrate</c><00:03:25.520><c> this</c><00:03:25.880><c> with</c>
+
+00:03:26.230 --> 00:03:26.240 align:start position:0%
+agent, "Can you integrate this with
+ 
+
+00:03:26.240 --> 00:03:28.670 align:start position:0%
+agent, "Can you integrate this with
+Gemini<00:03:26.720><c> Enterprise?"</c>
+
+00:03:28.670 --> 00:03:28.680 align:start position:0%
+Gemini Enterprise?"
+ 
+
+00:03:28.680 --> 00:03:30.990 align:start position:0%
+Gemini Enterprise?"
+Now<00:03:29.000><c> that</c><00:03:29.200><c> it's</c><00:03:29.400><c> registered,</c><00:03:30.280><c> let's</c><00:03:30.560><c> open</c><00:03:30.840><c> the</c>
+
+00:03:30.990 --> 00:03:31.000 align:start position:0%
+Now that it's registered, let's open the
+ 
+
+00:03:31.000 --> 00:03:33.630 align:start position:0%
+Now that it's registered, let's open the
+Gemini<00:03:31.440><c> Enterprise</c><00:03:32.080><c> UI.</c><00:03:33.080><c> Right</c><00:03:33.280><c> here</c><00:03:33.440><c> in</c><00:03:33.520><c> the</c>
+
+00:03:33.630 --> 00:03:33.640 align:start position:0%
+Gemini Enterprise UI. Right here in the
+ 
+
+00:03:33.640 --> 00:03:35.910 align:start position:0%
+Gemini Enterprise UI. Right here in the
+interface,<00:03:34.560><c> I</c><00:03:34.680><c> can</c><00:03:34.840><c> select</c><00:03:35.320><c> our</c><00:03:35.480><c> newly</c>
+
+00:03:35.910 --> 00:03:35.920 align:start position:0%
+interface, I can select our newly
+ 
+
+00:03:35.920 --> 00:03:38.950 align:start position:0%
+interface, I can select our newly
+deployed<00:03:36.640><c> outage</c><00:03:37.080><c> recovery</c><00:03:37.720><c> agent.</c><00:03:38.600><c> Let's</c>
+
+00:03:38.950 --> 00:03:38.960 align:start position:0%
+deployed outage recovery agent. Let's
+ 
+
+00:03:38.960 --> 00:03:42.190 align:start position:0%
+deployed outage recovery agent. Let's
+ask<00:03:39.280><c> it,</c><00:03:39.960><c> "Tell</c><00:03:40.240><c> me</c><00:03:40.360><c> about</c><00:03:40.600><c> recent</c><00:03:41.000><c> outages."</c>
+
+00:03:42.190 --> 00:03:42.200 align:start position:0%
+ask it, "Tell me about recent outages."
+ 
+
+00:03:42.200 --> 00:03:43.990 align:start position:0%
+ask it, "Tell me about recent outages."
+You<00:03:42.400><c> can</c><00:03:42.560><c> see</c><00:03:42.720><c> that</c><00:03:42.920><c> our</c><00:03:43.040><c> agent</c><00:03:43.320><c> is</c><00:03:43.480><c> equipped</c>
+
+00:03:43.990 --> 00:03:44.000 align:start position:0%
+You can see that our agent is equipped
+ 
+
+00:03:44.000 --> 00:03:46.270 align:start position:0%
+You can see that our agent is equipped
+with<00:03:44.160><c> the</c><00:03:44.280><c> tools</c><00:03:45.080><c> to</c><00:03:45.200><c> securely</c><00:03:45.800><c> access</c><00:03:46.160><c> our</c>
+
+00:03:46.270 --> 00:03:46.280 align:start position:0%
+with the tools to securely access our
+ 
+
+00:03:46.280 --> 00:03:48.670 align:start position:0%
+with the tools to securely access our
+logs<00:03:46.920><c> and</c><00:03:47.080><c> help</c><00:03:47.280><c> us</c><00:03:47.400><c> debug</c><00:03:47.760><c> the</c><00:03:47.880><c> issue</c><00:03:48.440><c> right</c>
+
+00:03:48.670 --> 00:03:48.680 align:start position:0%
+logs and help us debug the issue right
+ 
+
+00:03:48.680 --> 00:03:51.710 align:start position:0%
+logs and help us debug the issue right
+here<00:03:49.040><c> in</c><00:03:49.200><c> our</c><00:03:49.320><c> everyday</c><00:03:49.760><c> workspace.</c><00:03:50.800><c> So,</c>
+
+00:03:51.710 --> 00:03:51.720 align:start position:0%
+here in our everyday workspace. So,
+ 
+
+00:03:51.720 --> 00:03:53.710 align:start position:0%
+here in our everyday workspace. So,
+that's<00:03:52.000><c> the</c><00:03:52.080><c> power</c><00:03:52.280><c> of</c><00:03:52.400><c> Agency</c><00:03:52.720><c> CLI.</c><00:03:53.360><c> We</c><00:03:53.480><c> went</c>
+
+00:03:53.710 --> 00:03:53.720 align:start position:0%
+that's the power of Agency CLI. We went
+ 
+
+00:03:53.720 --> 00:03:56.150 align:start position:0%
+that's the power of Agency CLI. We went
+from<00:03:53.960><c> an</c><00:03:54.280><c> idea</c><00:03:54.920><c> to</c><00:03:55.000><c> a</c><00:03:55.080><c> fully</c><00:03:55.280><c> provisioned,</c>
+
+00:03:56.150 --> 00:03:56.160 align:start position:0%
+from an idea to a fully provisioned,
+ 
+
+00:03:56.160 --> 00:03:57.757 align:start position:0%
+from an idea to a fully provisioned,
+evaluated,<00:03:57.040><c> deployed,</c>
+
+00:03:57.757 --> 00:03:57.767 align:start position:0%
+evaluated, deployed,
+ 
+
+00:03:57.767 --> 00:03:57.870 align:start position:0%
+evaluated, deployed,
+&gt;&gt; [music]
+
+00:03:57.870 --> 00:03:57.880 align:start position:0%
+&gt;&gt; [music]
+ 
+
+00:03:57.880 --> 00:04:00.430 align:start position:0%
+&gt;&gt; [music]
+&gt;&gt; and<00:03:58.000><c> published</c><00:03:58.800><c> outage</c><00:03:59.120><c> recovery</c><00:03:59.520><c> agent,</c>
+
+00:04:00.430 --> 00:04:00.440 align:start position:0%
+&gt;&gt; and published outage recovery agent,
+ 
+
+00:04:00.440 --> 00:04:02.230 align:start position:0%
+&gt;&gt; and published outage recovery agent,
+with<00:04:00.600><c> Gemini</c><00:04:00.920><c> CLI</c><00:04:01.440><c> doing</c><00:04:01.760><c> all</c><00:04:01.920><c> the</c><00:04:02.080><c> heavy</c>
+
+00:04:02.230 --> 00:04:02.240 align:start position:0%
+with Gemini CLI doing all the heavy
+ 
+
+00:04:02.240 --> 00:04:03.430 align:start position:0%
+with Gemini CLI doing all the heavy
+lifting<00:04:02.560><c> for</c><00:04:02.680><c> us.</c>
+
+00:04:03.430 --> 00:04:03.440 align:start position:0%
+lifting for us.
+ 
+
+00:04:03.440 --> 00:04:06.870 align:start position:0%
+lifting for us.
+Yes,<00:04:04.480><c> Agency</c><00:04:05.080><c> CLI</c><00:04:05.400><c> cuts</c><00:04:05.720><c> down</c><00:04:05.960><c> the</c><00:04:06.040><c> busy</c><00:04:06.440><c> work,</c>
+
+00:04:06.870 --> 00:04:06.880 align:start position:0%
+Yes, Agency CLI cuts down the busy work,
+ 
+
+00:04:06.880 --> 00:04:09.790 align:start position:0%
+Yes, Agency CLI cuts down the busy work,
+saves<00:04:07.240><c> a</c><00:04:07.320><c> lot</c><00:04:07.680><c> of</c><00:04:07.800><c> time</c><00:04:08.280><c> and</c><00:04:08.400><c> token</c><00:04:08.760><c> cost,</c><00:04:09.600><c> and</c>
+
+00:04:09.790 --> 00:04:09.800 align:start position:0%
+saves a lot of time and token cost, and
+ 
+
+00:04:09.800 --> 00:04:11.950 align:start position:0%
+saves a lot of time and token cost, and
+actually<00:04:10.120><c> gets</c><00:04:10.360><c> your</c><00:04:10.520><c> agents</c><00:04:10.920><c> to</c><00:04:11.040><c> production.</c>
+
+00:04:11.950 --> 00:04:11.960 align:start position:0%
+actually gets your agents to production.
+ 
+
+00:04:11.960 --> 00:04:13.710 align:start position:0%
+actually gets your agents to production.
+Building<00:04:12.360><c> enterprise-grade</c><00:04:13.000><c> agents</c>
+
+00:04:13.710 --> 00:04:13.720 align:start position:0%
+Building enterprise-grade agents
+ 
+
+00:04:13.720 --> 00:04:16.030 align:start position:0%
+Building enterprise-grade agents
+shouldn't<00:04:14.040><c> require</c><00:04:14.480><c> navigating</c><00:04:15.040><c> a</c><00:04:15.080><c> maze</c><00:04:15.920><c> of</c>
+
+00:04:16.030 --> 00:04:16.040 align:start position:0%
+shouldn't require navigating a maze of
+ 
+
+00:04:16.040 --> 00:04:18.430 align:start position:0%
+shouldn't require navigating a maze of
+cloud<00:04:16.280><c> services.</c><00:04:17.120><c> Install</c><00:04:17.440><c> this</c><00:04:17.600><c> CLI</c><00:04:18.160><c> using</c>
+
+00:04:18.430 --> 00:04:18.440 align:start position:0%
+cloud services. Install this CLI using
+ 
+
+00:04:18.440 --> 00:04:19.990 align:start position:0%
+cloud services. Install this CLI using
+the<00:04:18.519><c> link</c><00:04:18.680><c> below</c><00:04:19.280><c> and</c><00:04:19.400><c> get</c><00:04:19.600><c> your</c><00:04:19.720><c> agents</c>
+
+00:04:19.990 --> 00:04:20.000 align:start position:0%
+the link below and get your agents
+ 
+
+00:04:20.000 --> 00:04:21.670 align:start position:0%
+the link below and get your agents
+closer<00:04:20.239><c> to</c><00:04:20.320><c> production</c><00:04:20.680><c> today.</c><00:04:21.359><c> Happy</c>
+
+00:04:21.670 --> 00:04:21.680 align:start position:0%
+closer to production today. Happy
+ 
+
+00:04:21.680 --> 00:04:24.200 align:start position:0%
+closer to production today. Happy
+building.
+
