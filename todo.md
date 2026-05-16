@@ -10,6 +10,13 @@ Things queued up — process before diving deeper.
 
 ---
 
+## Docs to Read
+
+- [ ] https://adk.dev/ — ADK official docs, read before scaffolding first agent
+- [ ] https://google.github.io/agents-cli/guide/getting-started/ — agents-cli getting started guide, follow for QS3
+
+---
+
 ## Next Steps
 
 - [ ] Complete gcloud CLI install → `gcloud auth application-default login` → re-run `PYTHONUTF8=1 uvx google-agents-cli setup`
