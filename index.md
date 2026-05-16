@@ -41,6 +41,7 @@
 ## Guides & References
 
 - [[resources/agent-platform-onboard/notes]] — Official onboarding guide: Agent Studio, Agent Designer, ADK + agents-cli (Eric Dong, Apr 2026)
+- [[resources/agents-cli/notes]] — agents-cli reference: install, commands, skills, auth, local dev without gcloud (v0.1.3, installed 2026-05-16)
 - [[resources/cloud-run-pricing/notes]] — Cloud Run pricing breakdown + cron job cost estimate (free tier covers ~2 hrs/day of jobs)
 
 ---

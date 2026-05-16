@@ -42,6 +42,8 @@ Use case: design visually, then graduate to code via ADK.
 
 ### QS3: ADK + agents-cli — Full Code Path
 
+**Status**: In progress 2026-05-16 — agents-cli v0.1.3 installed, gcloud CLI installing. See [[logs/2026-05-16]] and [[resources/agents-cli/notes]].
+
 The serious path. Uses Claude Code (or Gemini CLI / Codex) as the orchestrator.
 
 **Workflow** (natural language → working deployed agent):
