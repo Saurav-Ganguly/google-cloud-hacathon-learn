@@ -9,6 +9,10 @@ wheels/
 # Virtual environments
 .venv
 
+# Secrets
+.env
+*.env
+
 # Large media files (not needed in repo)
 resources/**/*.mp4
 resources/**/*.webm
