@@ -38,6 +38,10 @@
 
 - [[resources/day 1/What is Gemini Enterprise Agent Platform/notes]] — Agent Platform overview (Holt Skinner)
 
+## Guides & References
+
+- [[resources/agent-platform-onboard/notes]] — Official onboarding guide: Agent Studio, Agent Designer, ADK + agents-cli (Eric Dong, Apr 2026)
+
 ---
 
 ## General Learning
