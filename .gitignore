@@ -13,3 +13,8 @@ wheels/
 resources/**/*.mp4
 resources/**/*.webm
 resources/**/*.mkv
+resources/**/*.avi
+resources/**/*.mov
+resources/**/*.wmv
+resources/**/*.flv
+resources/**/*.m4v
