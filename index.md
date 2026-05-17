@@ -16,7 +16,11 @@
 ## Core Concepts
 
 - [[concepts/vertex-ai]] — Gemini Enterprise Agent Platform (Build/Scale/Govern/Optimize)
-- [[concepts/adk]] — Agent Development Kit (adk.dev)
+- [[concepts/adk]] — Agent Development Kit: primitives, agent types, workflow agents, state (deep reference)
+- [[concepts/adk-graph-workflows]] — ADK 2.0 graph-based workflows: conditional branching, parallel + join (Beta)
+- [[concepts/adk-multi-agent]] — Multi-agent patterns: coordinator, pipeline, fan-out, generator-critic, A2A
+- [[concepts/adk-mcp-integration]] — Connecting MCP servers to ADK agents (hackathon critical path)
+- [[concepts/adk-ambient-agents]] — Event-driven background agents: Pub/Sub, Eventarc, Cloud Scheduler
 - [[concepts/mcp]] — Model Context Protocol (tool integration)
 - [[concepts/a2a]] — Agent-to-Agent protocol (multi-agent systems)
 - [[concepts/agent-runtime]] — Managed PaaS for deployed agents
