@@ -38,6 +38,7 @@
 
 - [[resources/day 1/What is Gemini Enterprise Agent Platform/notes]] — Agent Platform overview (Holt Skinner)
 - [[resources/day 1/Introducing Agents CLI in Agent Platform/notes]] — agents-cli demo: scaffold → eval → deploy → publish, end-to-end in one session (Pier Paolo Ippolito + Ivan Cheung)
+- [[resources/day 1/Agents CLI Build eval and deploy AI agents in minutes/notes]] — Deep dive: ADK 2.0, graph workflows, ambient agents, resume agents, PR roaster demo (Shubham Saboo, Google Cloud Tech)
 
 ## Guides & References
 
