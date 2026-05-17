@@ -1,7 +1,6 @@
 # agents-cli Project Setup — Working Configuration
 
-> Read this before scaffolding, running, or deploying any agents-cli project in this repo.
-> **Deploying to Cloud Run? Go straight to the "Cloud Run Deploy — Definitive Runbook" section below and copy the block verbatim.** It already encodes every fix; deviating reintroduces solved errors.
+> Read this before scaffolding or running any agents-cli project in this repo.
 
 ## GCP Project
 
@@ -46,11 +45,17 @@ GOOGLE_CLOUD_LOCATION=global
 **Critical**: use `global` for `GOOGLE_CLOUD_LOCATION`, not `us-central1` or `us-east1`.
 `gemini-flash-latest` and other latest-alias models are only available via the `global` endpoint in Vertex AI.
 
-ADK loads `.env` automatically **locally only** — it walks up from the agent directory to find one. The `.env` is NOT shipped to Cloud Run; deploys must pass these same vars via `--update-env-vars` (the runbook below does this).
+ADK loads `.env` automatically **locally only** — it walks up from the agent directory to find one. The `.env` is NOT shipped to a deployed container; any deploy must pass these same vars to the runtime environment explicitly.
 
 ---
 
 ## Windows Gotchas
+
+### Running an agent locally
+
+For the full local-run runbook (test script, `adk web`, why `agents-cli playground`
+is broken on v0.1.3), see **[[configs/run-agent-locally]]** (`configs/run-agent-locally.md`).
+Short version of the crash below.
 
 ### agents-cli run times out / crashes
 
@@ -93,19 +98,19 @@ Run it with: `uv run python test_agent.py`
 
 ---
 
-## Cloud Run Deploy
-
-Deploying to Cloud Run? Use the canonical copy-paste runbook: **[[configs/cloud-run-deploy]]** (`configs/cloud-run-deploy.md`). It encodes every Windows fix in a single block — do not improvise a deploy.
-
----
-
 ## Scaffold Command
 
 ```bash
-agents-cli scaffold create <project-name> --agent adk --prototype --agent-guidance-filename CLAUDE.md
+PYTHONUTF8=1 agents-cli scaffold create <project-name> --agent adk --prototype --agent-guidance-filename CLAUDE.md
 ```
 
-The scaffold may crash at the end on Windows (emoji in success message) — that is cosmetic. Check if the directory was created; if yes, the scaffold succeeded.
+**Always prefix with `PYTHONUTF8=1`.** Without it the scaffold crashes on Windows
+on the very first emoji/checkmark print — which happens during *GCP credential
+verification, before any files are written*, so the project is never created (not
+a cosmetic end-of-run crash). `PYTHONUTF8=1` forces UTF-8 stdout so every emoji
+print succeeds and the scaffold completes with exit 0. Verified 2026-05-17 on the
+`architect-finder` project. Apply the same prefix to `agents-cli install` and any
+`uv run python` test scripts.
 
 ---
 

@@ -112,7 +112,7 @@ Before scaffolding or running **any** agents-cli project, read `configs/agents-c
 
 It documents the working GCP project, auth setup, required `.env` contents, and Windows workarounds (emoji crash, PATH issues). Every new project needs a `.env` created from that reference before it can run. Skipping this causes predictable auth and model-404 errors that take hours to debug.
 
-Before deploying to Cloud Run, read and follow `configs/cloud-run-deploy.md` verbatim — it is the only supported deploy path on Windows.
+Before running or testing any agent locally (test script, `adk web`, or playground), read and follow `configs/run-agent-locally.md` verbatim — it is the only supported local-run path on Windows. Do not improvise with `agents-cli playground` or `agents-cli run`; the runbook explains why they fail and what to use instead.
 
 ---
 
