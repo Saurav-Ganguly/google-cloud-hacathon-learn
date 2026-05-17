@@ -41,6 +41,10 @@ google_cloud_hacathon/
 │   └── day 1/
 │       └── What is Gemini Enterprise Agent Platform/
 │           └── notes.md
+├── configs/
+│   └── agents-cli-setup.md   ← GCP auth, .env template, Windows gotchas — READ BEFORE BUILDING
+├── logs/
+│   └── YYYY-MM-DD.md         ← Daily activity logs
 └── tools/
     └── watch_yt.py           ← Video download + frame extraction script
 ```
@@ -101,6 +105,16 @@ Raw video files (`*.mp4`, `*.webm`, `*.mkv`, `*.avi`, `*.mov`, `*.wmv`, `*.flv`,
 ---
 
 ## When Helping with This Project
+
+### agents-cli Projects (MANDATORY)
+
+Before scaffolding or running **any** agents-cli project, read `configs/agents-cli-setup.md`.
+
+It documents the working GCP project, auth setup, required `.env` contents, and Windows workarounds (emoji crash, PATH issues). Every new project needs a `.env` created from that reference before it can run. Skipping this causes predictable auth and model-404 errors that take hours to debug.
+
+Before deploying to Cloud Run, read and follow `configs/cloud-run-deploy.md` verbatim — it is the only supported deploy path on Windows.
+
+---
 
 ### Context-First Rule (MANDATORY)
 

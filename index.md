@@ -44,6 +44,8 @@
 - [[resources/agent-platform-onboard/notes]] — Official onboarding guide: Agent Studio, Agent Designer, ADK + agents-cli (Eric Dong, Apr 2026)
 - [[resources/agents-cli/notes]] — agents-cli reference: install, commands, skills, auth, local dev without gcloud (v0.1.3, installed 2026-05-16)
 - [[resources/cloud-run-pricing/notes]] — Cloud Run pricing breakdown + cron job cost estimate (free tier covers ~2 hrs/day of jobs)
+- [[configs/agents-cli-setup]] — GCP project, auth, .env, Windows gotchas — read before scaffold/run/deploy
+- [[configs/cloud-run-deploy]] — Definitive copy-paste Cloud Run deploy runbook (Windows) — every fix baked in
 
 ---
 
@@ -57,6 +59,7 @@
 ## Daily Logs
 
 - [[logs/2026-05-16]] — QS1 complete: Agent Studio → Cloud Run app deployed
+- [[logs/2026-05-17]] — QS3 complete: ADK + agents-cli full path (scaffold → eval → deploy → teardown)
 
 ---
 

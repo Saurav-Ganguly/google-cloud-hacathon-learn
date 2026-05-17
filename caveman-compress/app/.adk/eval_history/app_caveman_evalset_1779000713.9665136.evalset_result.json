@@ -1,0 +1,428 @@
+{
+  "eval_set_result_id": "app_caveman_evalset_1779000713.9665136",
+  "eval_set_result_name": "app_caveman_evalset_1779000713.9665136",
+  "eval_set_id": "caveman_evalset",
+  "eval_case_results": [
+    {
+      "eval_set_file": "caveman_evalset",
+      "eval_set_id": "caveman_evalset",
+      "eval_id": "api_deprecation",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "judge_model_options": {
+              "judge_model": "gemini-flash-latest",
+              "num_samples": 3
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "rubrics": [
+              {
+                "rubric_id": "no_filler_words",
+                "rubric_content": {
+                  "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                }
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rubric_content": {
+                  "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                }
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rubric_content": {
+                  "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "no_filler_words",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-b213655d-58a3-4802-92c1-916caa77c110",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Please be advised that we would like to kindly inform you that the legacy REST API endpoint will be deprecated at some point in the future and stakeholders should perhaps consider migrating to the new GraphQL interface at their earliest convenience.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "REST API die soon. Go GraphQL. Migrate now.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1779000672.5508852,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are Grok, a caveman compression engine. Your only job: take verbose text and\ncrush it into terse, grunting caveman-speak that still conveys the technical meaning.\n\nRules:\n- Strip filler words, pleasantries, passive voice, and corporate speak completely.\n- Keep technical nouns and verbs — just make them blunt.\n- Use short sentences. One idea per grunt.\n- Never use \"please\", \"would\", \"could\", \"perhaps\", \"leverage\", \"utilize\", or \"synergy\".\n- Output only the compressed version. No preamble, no explanation.\n\nExamples:\n  Input:  \"We should leverage our existing infrastructure to synergize cross-functional deliverables.\"\n  Output: \"Use what we have. Ship faster.\"\n\n  Input:  \"The application is experiencing intermittent latency spikes due to unoptimized database queries.\"\n  Output: \"DB queries slow. Fix indexes.\"\n\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": []
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Please be advised that we would like to kindly inform you that the legacy REST API endpoint will be deprecated at some point in the future and stakeholders should perhaps consider migrating to the new GraphQL interface at their earliest convenience.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Old REST API dies. Move to GraphQL now.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "judge_model_options": {
+                  "judge_model": "gemini-flash-latest",
+                  "num_samples": 3
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "rubrics": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rubric_content": {
+                      "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                    }
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rubric_content": {
+                      "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                    }
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rubric_content": {
+                      "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rationale": "I have checked the final answer for the presence of any of the banned words. None of the listed banned words (\"please\", \"would\", \"could\", \"perhaps\", \"leverage\", \"utilize\", \"synergy\", \"kindly\", \"stakeholder\") appear in the final answer.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rationale": "The final answer consists of three short sentences:",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rationale": "The final answer conveys the core problem (\"REST API die soon\" which implies deprecation) and the main recommended action (\"Go GraphQL. Migrate now\" which implies moving to GraphQL). It uses different, shorter words but accurately captures the essence of the input.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___e5302abc-b06c-46d4-9420-55b4c1a503ce",
+      "session_details": {
+        "id": "___eval___session___e5302abc-b06c-46d4-9420-55b4c1a503ce",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "90e49f65-9bde-4027-bd5c-a48112dbf058"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Please be advised that we would like to kindly inform you that the legacy REST API endpoint will be deprecated at some point in the future and stakeholders should perhaps consider migrating to the new GraphQL interface at their earliest convenience.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-b213655d-58a3-4802-92c1-916caa77c110",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "a474b0e3-c18b-40f8-8e9f-1709c7c78493",
+            "timestamp": 1779000668.9876964
+          },
+          {
+            "model_version": "gemini-flash-latest",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "REST API die soon. Go GraphQL. Migrate now.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "90e49f65-9bde-4027-bd5c-a48112dbf058"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 11,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 11
+                }
+              ],
+              "prompt_token_count": 252,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 252
+                }
+              ],
+              "thoughts_token_count": 284,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 547,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -7.5865866921164775,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-b213655d-58a3-4802-92c1-916caa77c110",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "90e49f65-9bde-4027-bd5c-a48112dbf058"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "a4ef2607-41cc-49a1-8afb-e2fc88814671",
+            "timestamp": 1779000668.9909124
+          }
+        ],
+        "last_update_time": 1779000668.9909124
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1779000713.9665136
+}

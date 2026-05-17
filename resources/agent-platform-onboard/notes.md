@@ -40,9 +40,9 @@ Note: First deploy may fail (permissions propagation). Click "Update app" after 
 
 Use case: design visually, then graduate to code via ADK.
 
-### QS3: ADK + agents-cli — Full Code Path
+### QS3: ADK + agents-cli — Full Code Path ✅ DONE
 
-**Status**: In progress 2026-05-16 — agents-cli v0.1.3 installed, gcloud CLI installing. See [[logs/2026-05-16]] and [[resources/agents-cli/notes]].
+**Status**: ✅ Complete 2026-05-17 — full path walked end-to-end: scaffold → build → eval (3/3) → deploy to Cloud Run → verify. Deployed service since torn down to stop billing. See [[logs/2026-05-17]], [[configs/agents-cli-setup]], and [[resources/agents-cli/notes]].
 
 The serious path. Uses Claude Code (or Gemini CLI / Codex) as the orchestrator.
 

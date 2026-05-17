@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "final_response_match_v2": {
+      "threshold": 0.7,
+      "judge_model_options": {
+        "judge_model": "gemini-flash-latest",
+        "num_samples": 3
+      }
+    },
+    "rubric_based_final_response_quality_v1": {
+      "threshold": 0.7,
+      "rubrics": [
+        {
+          "rubric_id": "no_filler_words",
+          "rubric_content": {
+            "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+          }
+        },
+        {
+          "rubric_id": "terse_sentences",
+          "rubric_content": {
+            "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+          }
+        },
+        {
+          "rubric_id": "preserves_technical_meaning",
+          "rubric_content": {
+            "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+          }
+        }
+      ]
+    }
+  }
+}

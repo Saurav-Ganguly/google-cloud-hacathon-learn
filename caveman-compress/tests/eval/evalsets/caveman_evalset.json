@@ -1,0 +1,55 @@
+{
+  "eval_set_id": "caveman_evalset",
+  "name": "Caveman Compress Eval Set",
+  "description": "Tests that Grok strips corporate/verbose text into terse caveman-speak while preserving technical meaning.",
+  "eval_cases": [
+    {
+      "eval_id": "corporate_synergy",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {
+            "parts": [{ "text": "We should leverage our existing infrastructure to synergize cross-functional deliverables and create impactful outcomes for our stakeholders." }]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [{ "text": "Use what we have. Ship faster." }]
+          }
+        }
+      ],
+      "session_input": { "app_name": "app", "user_id": "eval_user", "state": {} }
+    },
+    {
+      "eval_id": "db_latency",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {
+            "parts": [{ "text": "The application is experiencing intermittent latency spikes due to unoptimized database queries running against our production PostgreSQL cluster." }]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [{ "text": "DB queries slow. Fix indexes." }]
+          }
+        }
+      ],
+      "session_input": { "app_name": "app", "user_id": "eval_user", "state": {} }
+    },
+    {
+      "eval_id": "api_deprecation",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {
+            "parts": [{ "text": "Please be advised that we would like to kindly inform you that the legacy REST API endpoint will be deprecated at some point in the future and stakeholders should perhaps consider migrating to the new GraphQL interface at their earliest convenience." }]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [{ "text": "Old REST API dies. Move to GraphQL now." }]
+          }
+        }
+      ],
+      "session_input": { "app_name": "app", "user_id": "eval_user", "state": {} }
+    }
+  ]
+}

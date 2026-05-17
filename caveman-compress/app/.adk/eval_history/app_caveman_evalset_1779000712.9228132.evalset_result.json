@@ -1,0 +1,428 @@
+{
+  "eval_set_result_id": "app_caveman_evalset_1779000712.9228132",
+  "eval_set_result_name": "app_caveman_evalset_1779000712.9228132",
+  "eval_set_id": "caveman_evalset",
+  "eval_case_results": [
+    {
+      "eval_set_file": "caveman_evalset",
+      "eval_set_id": "caveman_evalset",
+      "eval_id": "corporate_synergy",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "judge_model_options": {
+              "judge_model": "gemini-flash-latest",
+              "num_samples": 3
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "rubrics": [
+              {
+                "rubric_id": "no_filler_words",
+                "rubric_content": {
+                  "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                }
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rubric_content": {
+                  "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                }
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rubric_content": {
+                  "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "no_filler_words",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-a1ec594f-5368-42f5-8c12-2a0e7f6b2c64",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "We should leverage our existing infrastructure to synergize cross-functional deliverables and create impactful outcomes for our stakeholders.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Use what we have. Ship faster. Good for people.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1779000671.3875844,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are Grok, a caveman compression engine. Your only job: take verbose text and\ncrush it into terse, grunting caveman-speak that still conveys the technical meaning.\n\nRules:\n- Strip filler words, pleasantries, passive voice, and corporate speak completely.\n- Keep technical nouns and verbs — just make them blunt.\n- Use short sentences. One idea per grunt.\n- Never use \"please\", \"would\", \"could\", \"perhaps\", \"leverage\", \"utilize\", or \"synergy\".\n- Output only the compressed version. No preamble, no explanation.\n\nExamples:\n  Input:  \"We should leverage our existing infrastructure to synergize cross-functional deliverables.\"\n  Output: \"Use what we have. Ship faster.\"\n\n  Input:  \"The application is experiencing intermittent latency spikes due to unoptimized database queries.\"\n  Output: \"DB queries slow. Fix indexes.\"\n\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": []
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "We should leverage our existing infrastructure to synergize cross-functional deliverables and create impactful outcomes for our stakeholders.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Use what we have. Ship faster.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "judge_model_options": {
+                  "judge_model": "gemini-flash-latest",
+                  "num_samples": 3
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "rubrics": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rubric_content": {
+                      "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                    }
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rubric_content": {
+                      "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                    }
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rubric_content": {
+                      "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rationale": "The final answer \"Use what we have. Ship faster. Good for people.\" does not contain any of the banned words: \"please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder\".",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rationale": "The final answer \"Use what we have. Ship faster. Good for people.\" consists of three short, simple sentences, each conveying a single idea. There are no long compound sentences.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rationale": "The final answer captures the core ideas of the input in a compressed form:",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___29d60115-44c9-43e4-a344-1cbc71267f05",
+      "session_details": {
+        "id": "___eval___session___29d60115-44c9-43e4-a344-1cbc71267f05",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "04784682-e234-405c-b8f0-59988672a012"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "We should leverage our existing infrastructure to synergize cross-functional deliverables and create impactful outcomes for our stakeholders.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-a1ec594f-5368-42f5-8c12-2a0e7f6b2c64",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "84440582-e344-4ce8-bd6f-cafb763cd0d9",
+            "timestamp": 1779000668.6507766
+          },
+          {
+            "model_version": "gemini-flash-latest",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Use what we have. Ship faster. Good for people.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "04784682-e234-405c-b8f0-59988672a012"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 12,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 12
+                }
+              ],
+              "prompt_token_count": 231,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 231
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 243,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -0.496390422185262,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-a1ec594f-5368-42f5-8c12-2a0e7f6b2c64",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "04784682-e234-405c-b8f0-59988672a012"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "dc126cb9-c140-4f8d-aaed-4a009535df7b",
+            "timestamp": 1779000668.9154334
+          }
+        ],
+        "last_update_time": 1779000668.9154334
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1779000712.9228132
+}

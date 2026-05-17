@@ -1,0 +1,428 @@
+{
+  "eval_set_result_id": "app_caveman_evalset_1779000714.0713816",
+  "eval_set_result_name": "app_caveman_evalset_1779000714.0713816",
+  "eval_set_id": "caveman_evalset",
+  "eval_case_results": [
+    {
+      "eval_set_file": "caveman_evalset",
+      "eval_set_id": "caveman_evalset",
+      "eval_id": "db_latency",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "judge_model_options": {
+              "judge_model": "gemini-flash-latest",
+              "num_samples": 3
+            }
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.7,
+          "criterion": {
+            "threshold": 0.7,
+            "rubrics": [
+              {
+                "rubric_id": "no_filler_words",
+                "rubric_content": {
+                  "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                }
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rubric_content": {
+                  "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                }
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rubric_content": {
+                  "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "no_filler_words",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "terse_sentences",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "preserves_technical_meaning",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-dcced7ab-a944-493d-bc82-b6672f18b0b6",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "The application is experiencing intermittent latency spikes due to unoptimized database queries running against our production PostgreSQL cluster.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "App slow. Prod DB queries bad. Fix SQL now.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1779000672.1024675,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are Grok, a caveman compression engine. Your only job: take verbose text and\ncrush it into terse, grunting caveman-speak that still conveys the technical meaning.\n\nRules:\n- Strip filler words, pleasantries, passive voice, and corporate speak completely.\n- Keep technical nouns and verbs — just make them blunt.\n- Use short sentences. One idea per grunt.\n- Never use \"please\", \"would\", \"could\", \"perhaps\", \"leverage\", \"utilize\", or \"synergy\".\n- Output only the compressed version. No preamble, no explanation.\n\nExamples:\n  Input:  \"We should leverage our existing infrastructure to synergize cross-functional deliverables.\"\n  Output: \"Use what we have. Ship faster.\"\n\n  Input:  \"The application is experiencing intermittent latency spikes due to unoptimized database queries.\"\n  Output: \"DB queries slow. Fix indexes.\"\n\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": []
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "The application is experiencing intermittent latency spikes due to unoptimized database queries running against our production PostgreSQL cluster.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "DB queries slow. Fix indexes.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "judge_model_options": {
+                  "judge_model": "gemini-flash-latest",
+                  "num_samples": 3
+                }
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.7,
+              "criterion": {
+                "threshold": 0.7,
+                "rubrics": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rubric_content": {
+                      "text_property": "The response must NOT contain the words: please, would, could, perhaps, leverage, utilize, synergy, kindly, stakeholder. These are banned."
+                    }
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rubric_content": {
+                      "text_property": "The response must be short and terse. Each sentence must convey exactly one idea. No long compound sentences."
+                    }
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rubric_content": {
+                      "text_property": "The response is a compressed form of the input. It does NOT need to repeat the exact words from the input. Score 1 if the response conveys the same core problem and action as the input (even using different shorter words). Score 0 only if the response omits the main problem or the main recommended action entirely."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "no_filler_words",
+                    "rationale": "The final answer \"App slow. Prod DB queries bad. Fix SQL now.\" does not contain any of the banned words.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "terse_sentences",
+                    "rationale": "The final answer consists of three very short sentences: \"App slow.\", \"Prod DB queries bad.\", \"Fix SQL now.\". Each sentence conveys a single, distinct idea and there are no compound sentences. The overall response is terse.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "preserves_technical_meaning",
+                    "rationale": "The user prompt identifies the core problem as \"application... latency spikes due to unoptimized database queries running against our production PostgreSQL cluster.\" The final answer compresses this to \"App slow. Prod DB queries bad.\" (referring to production database queries being bad/unoptimized). While the user prompt doesn't explicitly state an action, the implication of \"unoptimized database queries\" is that they need fixing. The final answer explicitly states the action: \"Fix SQL now.\" The response successfully conveys the core problem and an implied/explicit action in a compressed form.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___b2e7646b-8dc6-463f-8b4e-e90f98ea646d",
+      "session_details": {
+        "id": "___eval___session___b2e7646b-8dc6-463f-8b4e-e90f98ea646d",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "66fa207d-8367-4fe0-86bf-b90f0540d938"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "The application is experiencing intermittent latency spikes due to unoptimized database queries running against our production PostgreSQL cluster.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-dcced7ab-a944-493d-bc82-b6672f18b0b6",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "91a6b4ca-8dc1-4073-940f-5d220bf3cb5d",
+            "timestamp": 1779000668.9772556
+          },
+          {
+            "model_version": "gemini-flash-latest",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "App slow. Prod DB queries bad. Fix SQL now.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "66fa207d-8367-4fe0-86bf-b90f0540d938"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 12,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 12
+                }
+              ],
+              "prompt_token_count": 230,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 230
+                }
+              ],
+              "thoughts_token_count": 227,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 469,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": -5.276561101277669,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-dcced7ab-a944-493d-bc82-b6672f18b0b6",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "66fa207d-8367-4fe0-86bf-b90f0540d938"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "31fb3ab4-e763-4384-9d22-c84f1bab2fcd",
+            "timestamp": 1779000668.9866846
+          }
+        ],
+        "last_update_time": 1779000668.9866846
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1779000714.0713816
+}
