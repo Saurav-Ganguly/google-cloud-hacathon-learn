@@ -45,7 +45,7 @@
 - [[resources/agents-cli/notes]] — agents-cli reference: install, commands, skills, auth, local dev without gcloud (v0.1.3, installed 2026-05-16)
 - [[resources/cloud-run-pricing/notes]] — Cloud Run pricing breakdown + cron job cost estimate (free tier covers ~2 hrs/day of jobs)
 - [[configs/agents-cli-setup]] — GCP project, auth, .env, Windows gotchas — read before scaffold/run/deploy
-- [[configs/cloud-run-deploy]] — Definitive copy-paste Cloud Run deploy runbook (Windows) — every fix baked in
+- [[configs/run-agent-locally]] — Definitive local-run runbook (Windows): test script + `adk web`, why `agents-cli playground` is broken
 
 ---
 
@@ -77,4 +77,4 @@
 
 ## Projects
 
-*(none yet)*
+- [[projects/arch-social-agent]] — 3-agent sequential pipeline: web research → LinkedIn post + image prompt → Gemini image generation. Needs partner MCP to be hackathon-eligible.
