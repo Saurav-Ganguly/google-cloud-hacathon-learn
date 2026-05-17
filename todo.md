@@ -6,7 +6,7 @@ Things queued up — process before diving deeper.
 
 ## Videos to Watch
 
-- [ ] https://www.youtube.com/watch?v=nXafozNIk3c — queued 2026-05-16, watch with `/watch-a-yt-video`
+- [x] https://www.youtube.com/watch?v=nXafozNIk3c — ingested 2026-05-17, notes at [[resources/Agents CLI Build eval and deploy AI agents in minutes/notes]]
 
 ---
 
@@ -23,6 +23,8 @@ Things queued up — process before diving deeper.
 - [x] Open new terminal → `gcloud auth application-default login` → re-run `PYTHONUTF8=1 uvx google-agents-cli setup`
 - [x] Scaffold first agent with agents-cli: understand the full workflow hands-on
 - [x] Learn how to make agents with ADK + agents-cli (QS3 proper)
+- [x] Build `arch-social-agent` — 3-agent sequential pipeline (research → LinkedIn post → image gen) — done 2026-05-17
+- [ ] Add a partner MCP server to `arch-social-agent` to make it hackathon-eligible (candidates: Elastic, MongoDB, Arize)
 
 ---
 
