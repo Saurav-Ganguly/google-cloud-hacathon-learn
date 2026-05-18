@@ -20,6 +20,10 @@
 - [[concepts/adk-graph-workflows]] — ADK 2.0 graph-based workflows: conditional branching, parallel + join (Beta)
 - [[concepts/adk-multi-agent]] — Multi-agent patterns: coordinator, pipeline, fan-out, generator-critic, A2A
 - [[concepts/adk-litellm-models]] — Non-Gemini models via LiteLlm + the OpenRouter reasoning-leak gotcha (extra_body fix)
+- [[concepts/adk-sub-agents]] — Coordinator/sub-agent delegation; "control sticks" + positive routing
+- [[concepts/adk-session-state]] — Per-session memory: read/write, output_key, seeding gotchas
+- [[concepts/adk-guardrails]] — `before_model_callback` contract, per-agent scope
+- [[concepts/adk-prompt-injection-lessons]] — Live attack: guardrail bypass, keyword evasion, hallucinated identity
 - [[concepts/adk-mcp-integration]] — Connecting MCP servers to ADK agents (hackathon critical path)
 - [[concepts/adk-ambient-agents]] — Event-driven background agents: Pub/Sub, Eventarc, Cloud Scheduler
 - [[concepts/mcp]] — Model Context Protocol (tool integration)
@@ -52,6 +56,10 @@
 - [[resources/cloud-run-pricing/notes]] — Cloud Run pricing breakdown + cron job cost estimate (free tier covers ~2 hrs/day of jobs)
 - [[configs/agents-cli-setup]] — GCP project, auth, .env, Windows gotchas — read before scaffold/run/deploy
 - [[configs/run-agent-locally]] — Definitive local-run runbook (Windows): test script + `adk web`, why `agents-cli playground` is broken
+
+## Reference Code
+
+- `test/agent_teams/agent.py` — annotated ADK feature template: multi-agent delegation, LiteLlm models, session state, guardrail. Best file to copy patterns from. Explained by the `concepts/adk-*` notes above.
 
 ---
 

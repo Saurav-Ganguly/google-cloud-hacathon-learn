@@ -96,9 +96,21 @@ Always prove *which code path the test exercises* before concluding a fix failed
 
 ---
 
+## Reference implementation
+
+`test/agent_teams/agent.py` — heavily commented template demonstrating
+LiteLlm + `extra_body` reasoning-off alongside sub-agents, session state, and
+a guardrail. Single best file to copy patterns from.
+
+---
+
 ## Related
 
 - [[concepts/adk]] — agent primitives, model selection
 - [[concepts/adk-multi-agent]] — coordinator-on-Gemini, sub-agents-on-cheap-model pattern
+- [[concepts/adk-sub-agents]] — putting cheap models on delegated specialists
+- [[concepts/adk-session-state]] — shared state across the team
+- [[concepts/adk-guardrails]] — `before_model_callback` contract
+- [[concepts/adk-prompt-injection-lessons]] — model identity / prove-the-path discipline
 - [[configs/agents-cli-setup]] — auth / .env / Windows gotchas
 - [[configs/run-agent-locally]] — how `adk web` is run locally on Windows
