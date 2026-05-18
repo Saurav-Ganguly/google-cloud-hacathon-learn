@@ -19,6 +19,7 @@
 - [[concepts/adk]] — Agent Development Kit: primitives, agent types, workflow agents, state (deep reference)
 - [[concepts/adk-graph-workflows]] — ADK 2.0 graph-based workflows: conditional branching, parallel + join (Beta)
 - [[concepts/adk-multi-agent]] — Multi-agent patterns: coordinator, pipeline, fan-out, generator-critic, A2A
+- [[concepts/adk-litellm-models]] — Non-Gemini models via LiteLlm + the OpenRouter reasoning-leak gotcha (extra_body fix)
 - [[concepts/adk-mcp-integration]] — Connecting MCP servers to ADK agents (hackathon critical path)
 - [[concepts/adk-ambient-agents]] — Event-driven background agents: Pub/Sub, Eventarc, Cloud Scheduler
 - [[concepts/mcp]] — Model Context Protocol (tool integration)
