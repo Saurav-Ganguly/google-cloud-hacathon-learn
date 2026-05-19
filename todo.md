@@ -16,6 +16,7 @@ Things queued up — process before diving deeper.
 - [x] https://adk.dev/tutorials/agent-team/ — agent-team tutorial COMPLETE 2026-05-19 (all 6 steps). Reference template: `test/agent_teams/agent.py`. Concepts: [[concepts/adk-sub-agents]], [[concepts/adk-litellm-models]], [[concepts/adk-session-state]], [[concepts/adk-guardrails]], [[concepts/adk-tool-guardrails]], [[concepts/adk-prompt-injection-lessons]]
 - [ ] https://docs.litellm.ai/docs/ — LiteLLM docs, unified interface for calling 100+ LLMs (model fallback / multi-provider via ADK)
 - [x] https://google.github.io/agents-cli/guide/getting-started/ — agents-cli getting started guide, QS3 walked end-to-end 2026-05-17
+- [x] https://adk.dev/get-started/streaming/quickstart-streaming/ — streaming quickstart COMPLETE 2026-05-19 (voice + Google Search grounding via `adk web`). Reference: `test/adk_streaming/agent.py`. Gotcha: Vertex Live API needs `GOOGLE_CLOUD_LOCATION=us-central1` (not `global`)
 
 ---
 

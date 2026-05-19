@@ -60,6 +60,7 @@
 
 ## Reference Code
 
+- `test/adk_streaming/agent.py` — **minimal streaming-agent reference**: `Agent` + `google_search` grounding + Live model (`gemini-live-2.5-flash-native-audio`), run via `adk web` voice. Copy this when building any voice/video streaming agent. Gotcha: Vertex Live API requires `GOOGLE_CLOUD_LOCATION=us-central1`, never `global` (see [[logs/2026-05-19]]).
 - `test/agent_teams/agent.py` — **canonical annotated ADK feature template** (full agent-team tutorial, all 6 steps): multi-agent delegation, LiteLlm models, session state + `output_key`, model guardrail (`before_model_callback`), tool guardrail (`before_tool_callback`). Best file to copy any of these patterns from later — each section cross-references its `concepts/adk-*` note above.
 
 ---
