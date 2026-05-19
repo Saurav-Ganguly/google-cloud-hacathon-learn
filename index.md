@@ -23,6 +23,7 @@
 - [[concepts/adk-sub-agents]] — Coordinator/sub-agent delegation; "control sticks" + positive routing
 - [[concepts/adk-session-state]] — Per-session memory: read/write, output_key, seeding gotchas
 - [[concepts/adk-guardrails]] — `before_model_callback` contract, per-agent scope
+- [[concepts/adk-tool-guardrails]] — `before_tool_callback`: guard the resolved action, not the phrasing
 - [[concepts/adk-prompt-injection-lessons]] — Live attack: guardrail bypass, keyword evasion, hallucinated identity
 - [[concepts/adk-mcp-integration]] — Connecting MCP servers to ADK agents (hackathon critical path)
 - [[concepts/adk-ambient-agents]] — Event-driven background agents: Pub/Sub, Eventarc, Cloud Scheduler
@@ -59,7 +60,7 @@
 
 ## Reference Code
 
-- `test/agent_teams/agent.py` — annotated ADK feature template: multi-agent delegation, LiteLlm models, session state, guardrail. Best file to copy patterns from. Explained by the `concepts/adk-*` notes above.
+- `test/agent_teams/agent.py` — **canonical annotated ADK feature template** (full agent-team tutorial, all 6 steps): multi-agent delegation, LiteLlm models, session state + `output_key`, model guardrail (`before_model_callback`), tool guardrail (`before_tool_callback`). Best file to copy any of these patterns from later — each section cross-references its `concepts/adk-*` note above.
 
 ---
 
@@ -74,6 +75,8 @@
 
 - [[logs/2026-05-16]] — QS1 complete: Agent Studio → Cloud Run app deployed
 - [[logs/2026-05-17]] — QS3 complete: ADK + agents-cli full path (scaffold → eval → deploy → teardown)
+- [[logs/2026-05-18]] — ADK deep dive: sub-agents, LiteLlm, session state, model guardrail, live prompt-injection
+- [[logs/2026-05-19]] — agent-team tutorial COMPLETE: tool guardrail + "guard the action, not the phrasing"
 
 ---
 

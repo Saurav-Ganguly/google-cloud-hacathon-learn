@@ -76,6 +76,7 @@ defence-in-depth by luck, not by the guardrail.
 ## Related
 
 - [[concepts/adk-guardrails]] — the callback contract & layering
+- [[concepts/adk-tool-guardrails]] — guarding resolved args defeats reword evasions
 - [[concepts/adk-sub-agents]] — "control sticks" = the bypass enabler
 - [[concepts/adk-litellm-models]] — model identity, prove-the-path discipline
 - [[concepts/adk]] — agent primitives

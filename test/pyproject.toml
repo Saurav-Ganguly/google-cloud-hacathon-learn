@@ -1,13 +1,9 @@
 [project]
-name = "google-cloud-hacathon"
+name = "test"
 version = "0.1.0"
 description = "Add your description here"
+readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "yt-dlp>=2026.3.17",
-]
-
-[tool.uv.workspace]
-members = [
-    "test",
+    "google-adk>=1.33.0",
 ]

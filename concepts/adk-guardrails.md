@@ -2,7 +2,9 @@
 
 A callback that runs **before** an agent's LLM call, able to inspect the
 request and short-circuit it. Deterministic, code-level — unlike instruction
-wording, which is unreliable model judgment. Part of [[concepts/adk]].
+wording, which is unreliable model judgment. Part of [[concepts/adk]]. The
+second layer — gating the *tool call* the model decided on — is
+[[concepts/adk-tool-guardrails]].
 
 **Reference template**: `test/agent_teams/agent.py` (`block_keyword_guardrail`).
 
@@ -64,6 +66,7 @@ The concrete failure modes of the naive keyword filter are documented in
 ## Related
 
 - [[concepts/adk]] — agent primitives, callbacks
+- [[concepts/adk-tool-guardrails]] — the second layer: gate the resolved action
 - [[concepts/adk-sub-agents]] — why per-agent scope matters (control sticks)
 - [[concepts/adk-session-state]] — callbacks use state for audit flags
 - [[concepts/adk-prompt-injection-lessons]] — live evasions of this guardrail
