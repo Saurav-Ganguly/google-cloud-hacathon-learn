@@ -13,6 +13,7 @@ Things queued up — process before diving deeper.
 ## Docs to Read
 
 - [ ] https://adk.dev/ — ADK official docs, read before scaffolding first agent
+- [ ] **TOMORROW (2026-05-20)**: https://adk.dev/agents/llm-agents/ — build the Model-vs-Model Debate Bot sandbox to learn the 4 unused `LlmAgent` features (instruction state-vars, `generate_content_config`, schemas+`output_key`, `planner`). Full plan: [[plans/plan19.05.2026]]
 - [x] https://adk.dev/tutorials/agent-team/ — agent-team tutorial COMPLETE 2026-05-19 (all 6 steps). Reference template: `test/agent_teams/agent.py`. Concepts: [[concepts/adk-sub-agents]], [[concepts/adk-litellm-models]], [[concepts/adk-session-state]], [[concepts/adk-guardrails]], [[concepts/adk-tool-guardrails]], [[concepts/adk-prompt-injection-lessons]]
 - [ ] https://docs.litellm.ai/docs/ — LiteLLM docs, unified interface for calling 100+ LLMs (model fallback / multi-provider via ADK)
 - [x] https://google.github.io/agents-cli/guide/getting-started/ — agents-cli getting started guide, QS3 walked end-to-end 2026-05-17
@@ -28,6 +29,7 @@ Things queued up — process before diving deeper.
 - [x] Learn how to make agents with ADK + agents-cli (QS3 proper)
 - [x] Build `arch-social-agent` — 3-agent sequential pipeline (research → LinkedIn post → image gen) — done 2026-05-17
 - [x] Complete the ADK agent-team tutorial end-to-end (sub-agents, LiteLlm, state, model + tool guardrails) — done 2026-05-19, vaulted as `test/agent_teams/agent.py` template
+- [ ] **TOMORROW (2026-05-20)**: Build Debate Bot sandbox per [[plans/plan19.05.2026]] — drills the 4 unused `LlmAgent` features ([[concepts/adk]])
 - [ ] **NEXT (hackathon critical path)**: Add a partner MCP server to `arch-social-agent` to make it hackathon-eligible (candidates: Elastic, MongoDB, Arize) — see [[concepts/adk-mcp-integration]]
 
 ---

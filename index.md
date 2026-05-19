@@ -96,3 +96,9 @@
 ## Projects
 
 - [[projects/arch-social-agent]] — 3-agent sequential pipeline: web research → LinkedIn post + image prompt → Gemini image generation. Needs partner MCP to be hackathon-eligible.
+
+---
+
+## Plans
+
+- [[plans/plan19.05.2026]] — Model-vs-Model Debate Bot sandbox: learn the 4 unused `LlmAgent` features (instruction state-vars, `generate_content_config`, schemas+`output_key`, `planner`) + LiteLlm models debating each other. Queued for 2026-05-20.
