@@ -39,7 +39,7 @@ direct-runner script sidesteps the CLI. This is the workhorse for iteration.
 
 Best for testing back-and-forth (e.g. agent asks for a location, you reply).
 
-**Do NOT use `agents-cli playground`.** On agents-cli v0.1.3 it shells out to
+**Do NOT use `agents-cli playground`** (until re-verified on v0.2.0 — see below). On agents-cli v0.1.3 it shells out to
 `uv run adk web . --host 127.0.0.1 --port 8080`, and that argument form errors
 out with an `adk web` usage error — the server never starts. Root-caused
 2026-05-17 on `architect-finder`.
@@ -95,3 +95,5 @@ connection refused = the server is down, restart it.
 | Project | Date | What worked |
 |---------|------|-------------|
 | `architect-finder` | 2026-05-17 | Option A (`test_agent.py`) and Option B (`adk web . --port 8080`) both verified. `agents-cli playground` confirmed broken on v0.1.3. |
+
+**RETEST NEEDED (2026-05-20)**: agents-cli upgraded v0.1.3 → v0.2.0; `adk web` re-verified on `test/LlmDebator/` (works). `agents-cli playground` has NOT been re-tested on v0.2.0 — the workaround above (use `adk web` directly) still applies until verified.

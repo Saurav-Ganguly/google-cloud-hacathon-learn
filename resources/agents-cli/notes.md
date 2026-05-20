@@ -3,7 +3,7 @@
 **Repo**: https://github.com/google/agents-cli
 **PyPI**: https://pypi.org/project/google-agents-cli/
 **Docs**: https://google.github.io/agents-cli/
-**Version installed**: v0.1.3 (2026-05-16)
+**Version installed**: v0.2.0 (upgraded 2026-05-20 from v0.1.3). New commands in 0.2.0: `data-ingestion` (RAG agents), `lint`, `publish`, `infra`, `login`. Many tutorial-era v0.1.x quirks (notably the broken `playground` command) may have been fixed but have NOT been re-verified — see [[configs/run-agent-locally]].
 
 > The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.
 

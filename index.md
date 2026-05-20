@@ -54,7 +54,7 @@
 ## Guides & References
 
 - [[resources/agent-platform-onboard/notes]] — Official onboarding guide: Agent Studio, Agent Designer, ADK + agents-cli (Eric Dong, Apr 2026)
-- [[resources/agents-cli/notes]] — agents-cli reference: install, commands, skills, auth, local dev without gcloud (v0.1.3, installed 2026-05-16)
+- [[resources/agents-cli/notes]] — agents-cli reference: install, commands, skills, auth, local dev without gcloud (v0.2.0, upgraded 2026-05-20 from v0.1.3; new commands: `data-ingestion`, `lint`, `publish`, `infra`, `login`)
 - [[resources/cloud-run-pricing/notes]] — Cloud Run pricing breakdown + cron job cost estimate (free tier covers ~2 hrs/day of jobs)
 - [[configs/agents-cli-setup]] — GCP project, auth, .env, Windows gotchas — read before scaffold/run/deploy
 - [[configs/run-agent-locally]] — Definitive local-run runbook (Windows): test script + `adk web`, why `agents-cli playground` is broken

@@ -53,8 +53,8 @@ ADK loads `.env` automatically **locally only** — it walks up from the agent d
 
 ### Running an agent locally
 
-For the full local-run runbook (test script, `adk web`, why `agents-cli playground`
-is broken on v0.1.3), see **[[configs/run-agent-locally]]** (`configs/run-agent-locally.md`).
+For the full local-run runbook (test script, `adk web`, the `agents-cli playground`
+v0.1.3 brokenness — not yet retested on v0.2.0), see **[[configs/run-agent-locally]]** (`configs/run-agent-locally.md`).
 Short version of the crash below.
 
 ### agents-cli run times out / crashes
