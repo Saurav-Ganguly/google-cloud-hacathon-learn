@@ -13,8 +13,10 @@ Things queued up — process before diving deeper.
 ## Docs to Read
 
 - [ ] https://adk.dev/ — ADK official docs, read before scaffolding first agent
-- [ ] **TOMORROW (2026-05-20)**: https://adk.dev/agents/llm-agents/ — build the Model-vs-Model Debate Bot sandbox to learn the 4 unused `LlmAgent` features (instruction state-vars, `generate_content_config`, schemas+`output_key`, `planner`). Full plan: [[plans/plan19.05.2026]]
+- [x] https://adk.dev/agents/llm-agents/ — `LlmAgent` deep-config COMPLETE 2026-05-20. Built the 2-round Debate Bot sandbox (`test/LlmDebator/agent.py`) exercising every config feature: `{var}` templating, `output_schema`+`output_key`, `generate_content_config`, `BuiltInPlanner`, `include_contents='none'`, plus `google_search` via research-then-structure. New concept: [[concepts/adk-llm-agent-config]]. Original plan: [[plans/plan19.05.2026]] (superseded mid-build: critic-loop → 2 symmetric rounds).
 - [x] https://adk.dev/tutorials/agent-team/ — agent-team tutorial COMPLETE 2026-05-19 (all 6 steps). Reference template: `test/agent_teams/agent.py`. Concepts: [[concepts/adk-sub-agents]], [[concepts/adk-litellm-models]], [[concepts/adk-session-state]], [[concepts/adk-guardrails]], [[concepts/adk-tool-guardrails]], [[concepts/adk-prompt-injection-lessons]]
+- [ ] **TOMORROW (2026-05-21)**: https://adk.dev/agents/llm-agents/#code-execution — `code_executor` tutorial (`BuiltInCodeExecutor` calculator agent). Drills the last unused `LlmAgent` config slot. Test in `test/code_exec_calc/`.
+- [ ] **TOMORROW (2026-05-21)**: https://adk.dev/graphs/ — Graph-based agent workflows (ADK 2.0). Read + small sandbox combining a code function node + an LLM node in a `Workflow` graph. Extends [[concepts/adk-graph-workflows]] (currently doc-only, never built).
 - [ ] https://docs.litellm.ai/docs/ — LiteLLM docs, unified interface for calling 100+ LLMs (model fallback / multi-provider via ADK)
 - [x] https://google.github.io/agents-cli/guide/getting-started/ — agents-cli getting started guide, QS3 walked end-to-end 2026-05-17
 - [x] https://adk.dev/get-started/streaming/quickstart-streaming/ — streaming quickstart COMPLETE 2026-05-19 (voice + Google Search grounding via `adk web`). Reference: `test/adk_streaming/agent.py`. Gotcha: Vertex Live API needs `GOOGLE_CLOUD_LOCATION=us-central1` (not `global`)
@@ -29,7 +31,9 @@ Things queued up — process before diving deeper.
 - [x] Learn how to make agents with ADK + agents-cli (QS3 proper)
 - [x] Build `arch-social-agent` — 3-agent sequential pipeline (research → LinkedIn post → image gen) — done 2026-05-17
 - [x] Complete the ADK agent-team tutorial end-to-end (sub-agents, LiteLlm, state, model + tool guardrails) — done 2026-05-19, vaulted as `test/agent_teams/agent.py` template
-- [ ] **TOMORROW (2026-05-20)**: Build Debate Bot sandbox per [[plans/plan19.05.2026]] — drills the 4 unused `LlmAgent` features ([[concepts/adk]])
+- [x] Build Debate Bot sandbox per [[plans/plan19.05.2026]] — done 2026-05-20 as 2-round version (architecture revised mid-build). Drills every `LlmAgent` config feature. Reference template: `test/LlmDebator/agent.py`. New concept: [[concepts/adk-llm-agent-config]].
+- [ ] **TOMORROW (2026-05-21)**: Code execution tutorial (`BuiltInCodeExecutor`) — the last unused `LlmAgent` config slot
+- [ ] **TOMORROW (2026-05-21)**: Graph-based agent workflows basics — extends [[concepts/adk-graph-workflows]] (currently doc-only) with a small built sandbox
 - [ ] **NEXT (hackathon critical path)**: Add a partner MCP server to `arch-social-agent` to make it hackathon-eligible (candidates: Elastic, MongoDB, Arize) — see [[concepts/adk-mcp-integration]]
 
 ---
@@ -39,4 +43,4 @@ Things queued up — process before diving deeper.
 - [[index]] — Knowledge map
 - [[resources/agents-cli/notes]] — agents-cli reference
 - [[resources/agent-platform-onboard/notes]] — QS3 is the full code path
-- [[logs/2026-05-16]] — last session log
+- [[logs/2026-05-20]] — last session log
