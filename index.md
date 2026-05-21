@@ -17,7 +17,8 @@
 
 - [[concepts/vertex-ai]] — Gemini Enterprise Agent Platform (Build/Scale/Govern/Optimize)
 - [[concepts/adk]] — Agent Development Kit: primitives, agent types, workflow agents, state (deep reference)
-- [[concepts/adk-llm-agent-config]] — `LlmAgent` deep config: schemas, planner, content-config, state templating, `include_contents`, the output_schema↔tools constraint, and Gemini-2.5 thinking-budget gotcha
+- [[concepts/adk-llm-agent-config]] — `LlmAgent` deep config: schemas, planner, content-config, state templating, `include_contents`, the output_schema↔tools constraint, Gemini-2.5 thinking-budget gotcha, ADK templater regex (`{{...}}` does NOT escape), latest-alias built-in-tool gap
+- [[concepts/adk-code-executor]] — `code_executor=BuiltInCodeExecutor()` reference: sandbox limits, reading `part.code_execution_result.output`, mutual-exclusion with `output_schema` + LiteLlm, and the canonical placeholder-substitution pattern for piping LLM artifacts to downstream
 - [[concepts/adk-graph-workflows]] — ADK 2.0 graph-based workflows: conditional branching, parallel + join (Beta)
 - [[concepts/adk-multi-agent]] — Multi-agent patterns: coordinator, pipeline, fan-out, generator-critic, A2A
 - [[concepts/adk-litellm-models]] — Non-Gemini models via LiteLlm + the OpenRouter reasoning-leak gotcha (extra_body fix)
@@ -64,6 +65,7 @@
 - `test/adk_streaming/agent.py` — **minimal streaming-agent reference**: `Agent` + `google_search` grounding + Live model (`gemini-live-2.5-flash-native-audio`), run via `adk web` voice. Copy this when building any voice/video streaming agent. Gotcha: Vertex Live API requires `GOOGLE_CLOUD_LOCATION=us-central1`, never `global` (see [[logs/2026-05-19]]).
 - `test/agent_teams/agent.py` — **canonical annotated ADK feature template** (full agent-team tutorial, all 6 steps): multi-agent delegation, LiteLlm models, session state + `output_key`, model guardrail (`before_model_callback`), tool guardrail (`before_tool_callback`). Best file to copy any of these patterns from later — each section cross-references its `concepts/adk-*` note above.
 - `test/LlmDebator/agent.py` — **canonical annotated `LlmAgent`-deep-config template** (2-round Debate Bot, 2026-05-20): 7 agents in a `SequentialAgent`, every feature from [[concepts/adk-llm-agent-config]] used in context — Pydantic `output_schema` + `output_key`, `{var}` state-var templating across 4 rounds, `BuiltInPlanner` thinking, `include_contents='none'`, `generate_content_config` (per-agent temperature + safety_settings + thinking_budget), `google_search` composed with structured output via the research-then-structure pattern, `after_agent_callback` returning labeled `Content` to make `adk web` bubbles show "agent (model)" headers. Best file to copy LlmAgent config patterns from.
+- `test/code_runner/agent.py` — **canonical annotated `code_executor` template** (PDF Explainer, 2026-05-21): 5-agent `SequentialAgent` — `intent_capturer` (Gemini schema-fill) → `pdf_extractor` (LiteLlm deepseek + `FunctionTool`, drills FunctionTool-with-LiteLlm) → `structure_planner` (Gemini + `BuiltInPlanner`) → `chart_maker` (Gemini + `BuiltInCodeExecutor`, pinned to `gemini-2.5-flash` since `*-latest` aliases drop the tool) → `html_renderer` (Gemini, free-text HTML). Demonstrates `part.code_execution_result.output` reading, the placeholder-substitution pattern for keeping base64 OUT of LLM prompts, and the ADK templater `{var}` gotcha (no `{{...}}` escape). Best file to copy `code_executor` patterns from.
 
 ---
 
@@ -81,6 +83,7 @@
 - [[logs/2026-05-18]] — ADK deep dive: sub-agents, LiteLlm, session state, model guardrail, live prompt-injection
 - [[logs/2026-05-19]] — agent-team tutorial COMPLETE: tool guardrail + "guard the action, not the phrasing"
 - [[logs/2026-05-20]] — Debate Bot sandbox COMPLETE: 7-agent Sequential pipeline, every `LlmAgent` config feature exercised; new concept note [[concepts/adk-llm-agent-config]]
+- [[logs/2026-05-21]] — PDF Explainer sandbox COMPLETE: 5-agent pipeline drilling `code_executor` + `FunctionTool`-with-LiteLlm. New concept [[concepts/adk-code-executor]]; extended [[concepts/adk-llm-agent-config]] §9-10 with two ADK gotchas (templater regex + latest-alias built-in-tool gap)
 
 ---
 

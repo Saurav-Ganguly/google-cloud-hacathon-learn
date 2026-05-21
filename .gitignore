@@ -29,3 +29,13 @@ resources/**/*.mov
 resources/**/*.wmv
 resources/**/*.flv
 resources/**/*.m4v
+
+# ADK runtime artifacts (per-session DBs + saved Parts)
+test/.adk/
+test/**/.adk/
+
+# Sandbox input PDFs (treated as local-only test fixtures)
+test/**/*.pdf
+
+# Sandbox-generated outputs
+test/**/output.html

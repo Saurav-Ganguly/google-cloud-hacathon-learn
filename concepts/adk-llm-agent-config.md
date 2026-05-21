@@ -227,6 +227,73 @@ JSON from state.
 
 ---
 
+## 9. Gotcha: ADK's `{var}` templater is NOT Python's `.format()`
+
+Symptom: `adk web` toast `Context variable not found: 'title'.` even
+though no `{title}` exists in your instruction — only `{{title}}`,
+which you assumed would escape to a literal `{title}`.
+
+Root cause: ADK substitutes state vars by running this regex over the
+instruction:
+
+```python
+# from google.adk.utils.instructions_utils.inject_session_state
+re.sub(r'{+[^{}]*}+', replace_match, template)
+```
+
+The pattern `{+[^{}]*}+` greedily matches one-or-more `{`, any body
+WITHOUT braces, one-or-more `}`. So `{{title}}` matches as a SINGLE
+unit (body = `title`) and the substituter tries to look up
+`state["title"]` — which doesn't exist, so it raises.
+
+**There is no escape syntax.** Python's `.format()` rule of `{{ -> {`
+does not apply.
+
+Workarounds:
+
+- **Don't use literal braces in instructions.** Reword examples using
+  angle brackets or all-caps placeholders: `<TITLE>`, `THE_B64_VALUE`.
+- If you must show a brace example, describe it in prose without
+  showing the literal chars: "wrap the title in curly braces inside
+  your f-string".
+- Same applies to passing structured-looking values *into* the
+  instruction — `{ "key": "val" }` written in prose would be parsed as
+  a variable lookup. (Note: SUBSTITUTED values are not re-scanned, so
+  it's safe for state vars to contain dict-like text — that gets
+  inserted as-is after one pass.)
+
+Debugged 2026-05-21 — [[logs/2026-05-21]]. Sandbox where it bit us:
+`test/code_runner/agent.py` (the chart_maker instruction had a Python
+example line `print(f'...{title}|||{b64}...')` to show the model the
+expected output format; that line caused the template phase to
+explode before the model ever saw it).
+
+---
+
+## 10. Gotcha: latest-alias Gemini models drop built-in tool surfaces
+
+`gemini-flash-latest` on Vertex's `global` endpoint resolves to a model
+variant that does NOT expose certain Gemini built-in tools — at least
+`code_executor` (verified 2026-05-21). Symptom in `adk web`: the toast
+"Gemini code execution tool is not supported for model
+gemini-flash-latest" and the run halts.
+
+Fix: pin to an explicit version when the agent needs a built-in tool:
+
+```python
+GEMINI_MODEL = "gemini-flash-latest"           # default for most agents
+CODE_EXEC_MODEL = "gemini-2.5-flash"           # the one that ALSO has code_executor
+```
+
+This is likely a transient model-routing issue rather than a permanent
+removal, but explicit is always safer when a built-in tool is
+load-bearing. Same logic applies to `google_search` if it ever stops
+working under a latest-alias — pin to a specific version.
+
+Debugged 2026-05-21 — [[logs/2026-05-21]].
+
+---
+
 ## Reference implementation
 
 [`test/LlmDebator/agent.py`](../test/LlmDebator/agent.py) — every feature
