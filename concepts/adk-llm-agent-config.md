@@ -84,6 +84,12 @@ reads the fact-check as a text blob. Pattern: **research-then-structure** —
 one agent grounds with tools and produces unstructured findings; the next
 agent consumes them as text and produces structured JSON.
 
+The same `input_schema` / `output_schema` parameters also work on graph
+workflow nodes (both `Agent` nodes and plain `FunctionNode`s) — see
+[[concepts/adk-graph-workflows#Per-node schemas]] for the per-node
+variant and how the `{ClassName.field}` instruction syntax flows from a
+schema-typed upstream node into a downstream agent.
+
 ---
 
 ## 3. `generate_content_config` (temperature, safety, thinking)

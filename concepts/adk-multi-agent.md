@@ -198,5 +198,5 @@ Requires: `uv add "google-adk[a2a]"` — see [[concepts/a2a]] for full details.
 ## Related
 
 - [[concepts/adk]] — core primitives, agent types, workflow agents
-- [[concepts/adk-graph-workflows]] — graph-based conditional workflows (ADK 2.0)
+- [[concepts/adk-graph-workflows]] — graph workflows: reach for these instead when you need explicit branching, parallel + join, or human-in-the-loop gates (HITL) — coordinator delegation is the prompt-orchestrated alternative; graph workflows are the code-orchestrated one. Worked example: [[concepts/adk-graph-workflows-tutorial]].
 - [[concepts/a2a]] — Agent-to-Agent protocol

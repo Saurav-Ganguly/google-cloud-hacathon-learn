@@ -78,3 +78,4 @@ with pre-seeded state, or query a key the conversation never mentioned. (Same
 - [[concepts/adk-sub-agents]] — state is shared across the whole team
 - [[concepts/adk-guardrails]] — callbacks write state for auditability
 - [[configs/run-agent-locally]] — runner script = the real seeding path
+- [[concepts/adk-graph-workflows]] — graph workflows add a *second* state surface (`Event(state=...)`) that persists across nodes within one graph run; that is distinct from `session.state` documented here, which spans the whole session.
